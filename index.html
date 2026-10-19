@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Схема дожима пациентов на имплантацию · Smile Sales">
-<meta property="og:description" content="Авторская система продаж для стоматологии от Дмитрия Крюкова. 9 900 ₽ по акции.">
-<meta property="og:image" content="https://bmkagencykz-boop.github.io/shema-dozhima/img/og.jpg">
+<meta property="og:description" content="17 файлов и 250+ страниц для отдела продаж стоматологии от Дмитрия Крюкова. 7 490 ₽ по акции, бонус: регламент куратора.">
+<meta property="og:image" content="https://bmkagencykz-boop.github.io/shema-dozhima/img/og.jpg?v=2">
 <meta property="og:url" content="https://bmkagencykz-boop.github.io/shema-dozhima/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFFFFF">
@@ -312,6 +312,75 @@ h1,h2,h3{margin:0;text-wrap:balance}
   .hero-hand path{stroke-dashoffset:0}
   .bubble .typing{display:none}
 }
+
+/* ПАПКА */
+.folder{margin-top:36px;border-radius:26px;background:var(--paper);box-shadow:0 1px 0 var(--line),0 30px 70px rgba(45,62,80,.12);overflow:hidden}
+.fbar{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line);font-weight:700;color:var(--navy);font-size:14px}
+.fbar svg{flex:0 0 22px}
+.fbar span{margin-left:auto;font-size:12px;color:var(--mute);font-weight:600;white-space:nowrap}
+.files{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 14px;padding:18px 16px 8px}
+@media (min-width:700px){.files{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.fc{display:grid;gap:7px;align-content:start;min-width:0}
+.cv{position:relative;aspect-ratio:1/1.414;border-radius:10px;background:var(--cloud);box-shadow:0 1px 0 var(--line),0 10px 24px rgba(45,62,80,.12);transition:transform .35s var(--ease)}
+.cv img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;border-radius:10px}
+.fc:hover .cv{transform:translateY(-4px) rotate(-1deg)}
+.ty{position:absolute;left:8px;bottom:8px;font-size:10px;font-weight:800;letter-spacing:.06em;padding:3px 7px;border-radius:6px;color:#fff;background:var(--navy)}
+.ty.pdf{background:var(--red)}.ty.png{background:var(--pink)}.ty.xls{background:#1E8E3E}
+.fc b{font-size:13.5px;line-height:1.3;color:var(--navy);font-weight:700}
+.fc small{font-size:12px;color:var(--mute);font-weight:600}
+.cv.stack{box-shadow:6px 6px 0 -1px #fff,6px 6px 0 0 var(--line),12px 12px 0 -1px #fff,12px 12px 0 0 var(--line),0 10px 24px rgba(45,62,80,.12);margin-right:12px}
+.cv.sheet{background:#fff;overflow:hidden;border-radius:10px}
+.cv.sheet::before{content:"";position:absolute;left:0;right:0;top:0;height:16%;background:#1E8E3E}
+.cv.sheet::after{content:"";position:absolute;inset:16% 0 0 0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:100% 9%,25% 100%}
+.cv.sheet i{position:absolute;z-index:1;left:12%;right:12%;bottom:14%;height:34%;display:flex;align-items:flex-end;gap:8%}
+.cv.sheet i::before,.cv.sheet i::after{content:"";flex:1;background:var(--pink);height:60%;border-radius:3px 3px 0 0;box-shadow:calc(100% + 8px) -20px 0 0 var(--navy)}
+.cv.sheet i::after{height:90%}
+.fc.main .cv::after{content:"Основа";position:absolute;top:8px;right:8px;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--pink);padding:3px 7px;border-radius:6px}
+.bonus{position:relative;margin:14px 16px 16px;border-radius:22px;background:var(--navy);color:#fff;padding:22px 20px;display:grid;gap:16px;overflow:hidden}
+@media (min-width:700px){.bonus{grid-template-columns:200px 1fr;align-items:center}}
+.bonus::before{content:"";position:absolute;inset:0;border-radius:22px;padding:2px;background:linear-gradient(135deg,var(--pink),transparent 55%,var(--pink));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.fan{position:relative;height:170px}
+.fan img{position:absolute;top:6px;width:110px;height:auto;border-radius:8px;box-shadow:0 14px 30px rgba(0,0,0,.35);transition:transform .5s var(--ease)}
+.fan img:nth-child(1){left:calc(50% - 100px);transform:rotate(-9deg)}
+.fan img:nth-child(2){left:calc(50% - 10px);transform:rotate(7deg)}
+.bonus:hover .fan img:nth-child(1){transform:rotate(-13deg) translateX(-8px)}
+.bonus:hover .fan img:nth-child(2){transform:rotate(11deg) translateX(8px)}
+.btag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--pink);border-radius:999px;padding:6px 12px;animation:glow 2.4s infinite;justify-self:start}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(240,54,106,.5)}60%{box-shadow:0 0 0 12px rgba(240,54,106,0)}}
+.bonus h3{font-size:clamp(21px,5.4vw,28px);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-top:10px}
+.bonus .bm{margin-top:6px;font-size:14px;color:#B9C6D1;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chips span{font-size:12.5px;font-weight:600;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14)}
+.bonus .free{margin-top:14px;font-family:var(--hand);font-size:26px;color:var(--pink);transform:rotate(-2deg);display:inline-block}
+.ftot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+.ftot div{padding:14px 10px;text-align:center}
+.ftot div + div{border-left:1px solid var(--line)}
+.ftot strong{display:block;font-size:clamp(22px,6vw,30px);font-weight:800;color:var(--navy);letter-spacing:-.02em;line-height:1}
+.ftot span{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+
+/* ДЕМО: настоящие страницы */
+.dtabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-top:28px;padding-bottom:2px}
+.dtabs::-webkit-scrollbar{display:none}
+.dtab{flex:0 0 auto;border:1px solid var(--line);background:var(--paper);color:var(--navy);font-size:13px;font-weight:600;padding:10px 15px;border-radius:999px;cursor:pointer;transition:all .2s}
+.dtab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.dmeta{display:flex;align-items:baseline;gap:10px;margin-top:20px}
+.dmeta strong{font-size:clamp(34px,9vw,52px);font-weight:800;color:var(--pink);letter-spacing:-.03em;line-height:1}
+.dmeta span{font-size:14px;font-weight:600;color:var(--ink-2)}
+.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;padding:18px 2px 22px;scrollbar-width:thin;overscroll-behavior-x:contain;animation:fadeUp .5s var(--ease)}
+.strip .pg{flex:0 0 clamp(150px,44vw,210px);scroll-snap-align:start;border:0;padding:0;background:#fff;border-radius:8px;cursor:zoom-in;box-shadow:0 1px 0 var(--line),0 12px 28px rgba(45,62,80,.14);transition:transform .3s var(--ease)}
+.strip .pg:hover{transform:translateY(-4px)}
+.strip .pg img{display:block;width:100%;height:auto;border-radius:8px;aspect-ratio:1/1.414;object-fit:cover;object-position:top}
+.strip .more{flex:0 0 clamp(150px,44vw,210px);aspect-ratio:1/1.414;border-radius:8px;background:var(--navy);color:#fff;display:grid;place-content:center;text-align:center;gap:6px;padding:14px}
+.strip .more b{font-size:42px;font-weight:800;color:var(--pink);line-height:1}
+.strip .more span{font-size:13px;color:#C9D4DE}
+.dhint{font-size:13px;color:var(--mute)}
+.lb{position:fixed;inset:0;z-index:60;background:rgba(17,26,36,.92);display:grid;place-items:center;padding:calc(56px + env(safe-area-inset-top,0px)) 16px calc(70px + env(safe-area-inset-bottom,0px));animation:fadeIn .25s}
+.lb img{max-width:min(100%,520px);max-height:100%;border-radius:8px;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lb .lx,.lb .lp,.lb .ln{position:absolute;border:0;border-radius:50%;width:46px;height:46px;background:rgba(255,255,255,.12);color:#fff;font-size:22px;cursor:pointer}
+.lb .lx{top:calc(12px + env(safe-area-inset-top,0px));right:14px}
+.lb .lp{left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+.lb .ln{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+.lb .lc{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(26px + env(safe-area-inset-bottom,0px));color:#C9D4DE;font-size:13px;font-weight:600}
 </style>
 </head>
 <body>
@@ -319,7 +388,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 <header class="nav" id="nav">
   <div class="wrap">
     <a class="logo" href="#top">SMILE SALES <i>AGENCY</i></a>
-    <div class="nav-r"><span>9 900 ₽ · 54 000 ₸</span><a class="btn btn-main" href="https://t.me/thedmkr" target="_blank" rel="noopener">Купить</a></div>
+    <div class="nav-r"><span>7 490 ₽ · 40 000 ₸</span><a class="btn btn-main" href="https://t.me/thedmkr" target="_blank" rel="noopener">Купить</a></div>
   </div>
 </header>
 
@@ -344,10 +413,48 @@ h1,h2,h3{margin:0;text-wrap:balance}
         <div><strong data-count="9" data-suf="+">9+</strong><span>лет опыта</span></div>
       </div>
       <p class="lead">Схема дожима пациентов на имплантацию и ещё 15 инструментов для отдела продаж. Писали для своих колл-центров, теперь доступно вашей клинике.</p>
-      <div class="price-line"><span class="tag">Акция</span><s>20 000 ₽</s><strong>9 900 ₽</strong><span class="kz">или 54 000 ₸ за всю папку</span></div>
+      <div class="price-line"><span class="tag">Акция</span><s>17 000 ₽</s><strong>7 490 ₽</strong><span class="kz">или 40 000 ₸ за всю папку</span></div>
       <div class="btns">
         <a class="btn btn-main" href="https://t.me/thedmkr" target="_blank" rel="noopener">Получить папку</a>
-        <a class="link" href="#video">Смотреть обзор</a>
+        <a class="link" href="#folder">Что внутри</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПАПКА -->
+<section class="band cloud" id="folder">
+  <div class="wrap narrow">
+    <div class="stack">
+      <p class="eyebrow" data-rv>Что внутри папки</p>
+      <h2 class="h2" data-rv>17 файлов. <span class="soft">250+ страниц.</span></h2>
+    </div>
+    <div class="folder" data-rv>
+      <div class="fbar"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h4l2 2h7A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z" fill="#F0366A"/></svg>Схема дожима · Smile Sales<span>Google Drive</span></div>
+      <div class="files">
+        <div class="fc main" data-rv><div class="cv"><img src="img/covers/01.webp" alt="Обложка: Схема дожима пациентов на имплантацию" width="340" height="481"><span class="ty">DOCX</span></div><b>Схема дожима пациентов на имплантацию</b><small>50+ страниц · 15 этапов</small></div>
+        <div class="fc" data-rv style="--d:.05s"><div class="cv"><img src="img/covers/02.webp" alt="Обложка: Работа с возражениями" width="340" height="481" loading="lazy"><span class="ty">DOCX</span></div><b>Работа с возражениями</b><small>18+ страниц · урок</small></div>
+        <div class="fc" data-rv style="--d:.1s"><div class="cv"><img src="img/covers/06.webp" alt="Обложка: Адаптация сотрудника" width="340" height="481" loading="lazy"><span class="ty">DOCX</span></div><b>Адаптация сотрудника КЦ с нуля</b><small>100+ страниц · 30 дней</small></div>
+        <div class="fc" data-rv style="--d:.15s"><div class="cv"><img src="img/covers/03.webp" alt="Фрагмент майнд-карты схемы" width="340" height="481" loading="lazy"><span class="ty png">PNG</span></div><b>Майнд-карта схемы</b><small>вся схема на одном листе</small></div>
+        <div class="fc" data-rv><div class="cv"><img src="img/covers/04.webp" alt="Обложка: ТЗ кейсы До–После" width="340" height="481" loading="lazy"><span class="ty">GDOC</span></div><b>ТЗ: кейсы «До–После»</b><small>9 страниц · 8 направлений</small></div>
+        <div class="fc" data-rv style="--d:.05s"><div class="cv"><img src="img/covers/05.webp" alt="Обложка: ТЗ на видеовизитки" width="340" height="481" loading="lazy"><span class="ty">DOCX</span></div><b>ТЗ на видеовизитки врачей</b><small>хронометраж по блокам</small></div>
+        <div class="fc" data-rv style="--d:.1s"><div class="cv stack"><img src="img/covers/reg.webp" alt="Регламент роли" width="340" height="481" loading="lazy"><span class="ty pdf">5 PDF</span></div><b>Регламенты ролей</b><small>администратор, КЦ, ОКК, РОП, куратор</small></div>
+        <div class="fc" data-rv style="--d:.15s"><div class="cv sheet"><i></i><span class="ty xls">SHEETS</span></div><b>Шаблоны РНП</b><small>3 Google-таблицы</small></div>
+      </div>
+      <div class="bonus" data-rv>
+        <div class="fan" aria-hidden="true"><img src="img/covers/07.webp" alt="" width="340" height="481" loading="lazy"><img src="img/pages/s07b-08.webp" alt="" width="400" height="566" loading="lazy"></div>
+        <div>
+          <span class="btag">★ Бонус</span>
+          <h3>Полный регламент куратора в стоматологии</h3>
+          <p class="bm">2 части · 71 страница + должностной регламент куратора</p>
+          <div class="chips"><span>Найм и кейс-тест</span><span>Логистика пациента</span><span>9 нормативов</span><span>Follow-up 90 дней</span><span>CRM-таблица</span><span>Шаблон плана лечения</span></div>
+          <p class="free">входит в папку бесплатно</p>
+        </div>
+      </div>
+      <div class="ftot">
+        <div><strong>17</strong><span>файлов</span></div>
+        <div><strong>250+</strong><span>страниц</span></div>
+        <div><strong>1</strong><span>бонус</span></div>
       </div>
     </div>
   </div>
@@ -379,44 +486,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
       <div class="pillar" data-rv><span class="dot">2</span><h3>Тип запроса</h3><p>По первому сообщению видно, что нужно человеку, и какой порядок шагов выбрать.</p></div>
       <div class="pillar" data-rv><span class="dot">3</span><h3><button class="term" data-term="kc">КЦ</button> понимает, как и с кем работать</h3><p>Механика вместо заученных фраз. Менеджер понимает логику и сам подбирает слова.</p></div>
     </div>
-  </div>
-</section>
-
-<!-- ИНТЕРАКТИВ -->
-<section class="band cloud" id="try">
-  <div class="wrap narrow">
-    <div class="stack">
-      <p class="eyebrow" data-rv>Попробуйте</p>
-      <h2 class="h2" data-rv>Пациент написал. <span class="soft">Что ответить?</span></h2>
-    </div>
-    <div class="lab" data-rv>
-      <div class="seg" role="tablist" aria-label="Тип запроса">
-        <button role="tab" aria-selected="true" data-k="0">Ценовой</button>
-        <button role="tab" aria-selected="false" data-k="1">Общий</button>
-        <button role="tab" aria-selected="false" data-k="2">Подробный</button>
-        <button role="tab" aria-selected="false" data-k="3">Повторный</button>
-      </div>
-      <div class="panel" data-k="0">
-        <div class="bubble"><span class="typing"><i></i><i></i><i></i></span><span class="msg">Здравствуйте, сколько стоит имплант?</span></div>
-        <p class="need">Нужно понять, <em>по карману ли</em>. Голая цифра = сравнит и уйдёт.</p>
-        <ol class="flow"><li><span><b>Два уточнения:</b> сколько зубов, как давно</span></li><li><span><b><button class="term" data-term="frame">Цена в рамке</button></b> «от» + состав</span></li><li><span><b>Кейс</b> и два окна у врача</span></li></ol>
-      </div>
-      <div class="panel" data-k="1" hidden>
-        <div class="bubble"><span class="typing"><i></i><i></i><i></i></span><span class="msg">Здравствуйте, у меня нет зуба</span></div>
-        <p class="need">Нужен <em>проводник</em>: человек не знает, что спрашивать.</p>
-        <ol class="flow"><li><span><b>Ситуация</b> одним сообщением</span></li><li><span><b>Главная боль:</b> вид или жевание</span></li><li><span><b>Кейс, цена</b> и окно</span></li></ol>
-      </div>
-      <div class="panel" data-k="2" hidden>
-        <div class="bubble"><span class="typing"><i></i><i></i><i></i></span><span class="msg">Внизу справа нет двух зубов уже три года, в другой клинике сказали, что нужна пластика. Какие варианты?</span></div>
-        <p class="need">Нужно, чтобы <em>услышали</em> и не задавали лишних вопросов.</p>
-        <ol class="flow"><li><span><b>Пересказ</b> ситуации</span></li><li><span><b>Одно уточнение:</b> что смутило в другой клинике</span></li><li><span><b>Кейс,</b> честно о рисках, окно</span></li></ol>
-      </div>
-      <div class="panel" data-k="3" hidden>
-        <div class="bubble"><span class="typing"><i></i><i></i><i></i></span><span class="msg">Я писала вам весной по импланту, хочу вернуться</span></div>
-        <p class="need">Нужно, чтобы <em>помнили</em> прошлый разговор.</p>
-        <ol class="flow"><li><span><b>История в CRM</b> до ответа</span></li><li><span><b>Опора на прошлое:</b> план, кейс</span></li><li><span><b>Новое окно</b> без повторных вопросов</span></li></ol>
-      </div>
-    </div>
+    <figure class="illu" data-rv><img src="img/illustration.webp" alt="Иллюстрация: стоматология — это про людей. РОП, администраторы, кураторы, врачи, КЦ, маркетинг, финансы" width="1000" height="1000" loading="lazy"></figure>
   </div>
 </section>
 
@@ -425,99 +495,25 @@ h1,h2,h3{margin:0;text-wrap:balance}
   <div class="wrap narrow">
     <div class="stack">
       <p class="eyebrow" data-rv>Демо</p>
-      <h2 class="h2" data-rv>Так выглядят документы</h2>
+      <h2 class="h2" data-rv>Настоящие страницы. <span class="soft">Листайте и нажимайте.</span></h2>
     </div>
-    <div class="tabs" role="tablist" aria-label="Разделы демо">
-      <button class="tab" role="tab" aria-selected="true" data-i="0">15 этапов</button>
-      <button class="tab" role="tab" aria-selected="false" data-i="1">Цена в рамке</button>
-      <button class="tab" role="tab" aria-selected="false" data-i="2">Молчуны</button>
-      <button class="tab" role="tab" aria-selected="false" data-i="3">«Дорого»</button>
+    <div class="dtabs" role="tablist" aria-label="Документы">
+      <button class="dtab" role="tab" aria-selected="true" data-k="s01" data-n="50+" data-l="страниц в схеме дожима">Схема дожима</button>
+      <button class="dtab" role="tab" aria-selected="false" data-k="s02" data-n="18+" data-l="страниц урока по возражениям">Возражения</button>
+      <button class="dtab" role="tab" aria-selected="false" data-k="s06" data-n="100+" data-l="страниц адаптации сотрудника">Адаптация КЦ</button>
+      <button class="dtab" role="tab" aria-selected="false" data-k="s07" data-n="71" data-l="страница регламента куратора · бонус">Куратор · бонус</button>
     </div>
-    <div class="slides" id="slides">
-      <article class="doc" aria-label="Общая схема">
-        <div class="ph"><span>SMILE SALES <i>AGENCY</i></span><span>Механика дожима</span></div>
-        <h4>От заявки до лечения</h4>
-        <p class="sub">Порядок действий с каждым лидом.</p>
-        <ol class="toc">
-          <li><div><strong>Заявка и скорость ответа</strong><span>Первое касание до 5 минут</span></div></li>
-          <li><div><strong>Квалификация</strong><span>Факты о пациенте до разговора о записи</span></div></li>
-          <li><div><strong>Теплота лида</strong><span>Горячий / тёплый / холодный задаёт темп</span></div></li>
-          <li><div><strong>Тип запроса</strong><span>Задаёт порядок шагов</span></div></li>
-          <li><div><strong>Клиническая ситуация</strong><span>Какой кейс нужен</span></div></li>
-          <li><div><strong>Цена в рамке</strong><span>Сначала уточнения, потом «от» + состав</span></div></li>
-          <li class="blur"><div><strong>Доверие: кейс + видеовизитка</strong><span>Врач до визита</span></div></li>
-          <li class="blur"><div><strong>Возражения</strong><span>Настоящая причина</span></div></li>
-        </ol>
-        <p class="lock">+ ещё 9 этапов в папке</p>
-        <div class="pf"><span>smile sales agency</span><b>демо</b></div>
-      </article>
-      <article class="doc" aria-label="Цена в рамке">
-        <div class="ph"><span>SMILE SALES <i>AGENCY</i></span><span>Механика дожима</span></div>
-        <h4>Этап 6. Цена в рамке</h4>
-        <div class="note"><b class="t">Механизм</b>Голая цифра превращает имплантацию в товар. Цена в рамке переводит разговор с «сколько» на «что я получу и почему здесь».</div>
-        <div class="steps">
-          <div class="step"><div class="n">Шаг<b>1</b></div><div class="c"><strong>Уточнить</strong><span>Сколько зубов, как давно</span></div></div>
-          <div class="arrow">▼</div>
-          <div class="step"><div class="n">Шаг<b>2</b></div><div class="c"><strong>Назвать «от»</strong><span>Только из паспорта клиники</span></div></div>
-          <div class="arrow">▼</div>
-          <div class="step blur"><div class="n">Шаг<b>3</b></div><div class="c"><strong>Расшифровать «под ключ»</strong><span>Имплантат, абатмент, коронка</span></div></div>
-        </div>
-        <p class="lock">Полный разбор этапа в папке</p>
-        <div class="pf"><span>smile sales agency</span><b>демо</b></div>
-      </article>
-      <article class="doc" aria-label="Молчуны">
-        <div class="ph"><span>SMILE SALES <i>AGENCY</i></span><span>Механика дожима</span></div>
-        <h4>Молчуны</h4>
-        <p class="sub">Молчание не отказ. Это сигнал сменить канал, время или ценность касания.</p>
-        <div class="tbl"><table>
-          <thead><tr><th>Молчит</th><th>Значит</th><th>Маршрут</th></tr></thead>
-          <tbody>
-            <tr><td>На вопросах</td><td>Лень отвечать</td><td>Один вопрос с вариантами</td></tr>
-            <tr><td>После цены</td><td>Шок или сравнивает</td><td>Рассрочка, состав, кейс</td></tr>
-            <tr class="blur"><td>После записи</td><td>Страх</td><td>Вопрос о сомнении…</td></tr>
-          </tbody>
-        </table></div>
-        <div class="note red"><b class="t">Правило</b>Максимум 7 касаний за 14 дней. «Ау» и «надумали?» запрещены.</div>
-        <p class="lock">8 типов молчания в папке</p>
-        <div class="pf"><span>smile sales agency</span><b>демо</b></div>
-      </article>
-      <article class="doc" aria-label="Возражение дорого">
-        <div class="ph"><span>SMILE SALES <i>AGENCY</i></span><span>Возражения</span></div>
-        <h4>«Дорого»</h4>
-        <div class="tbl"><table><tbody>
-          <tr><td>За ним</td><td>Не видит ценности / нет суммы сразу / сравнил / страх</td></tr>
-          <tr><td>Делаем</td><td>Узнать, с чем сравнивает. Ценность или рассрочка. Без скидки</td></tr>
-        </tbody></table></div>
-        <div class="note red"><b class="t">Правило двух попыток</b>Одно возражение отрабатывается не больше двух раз за диалог.</div>
-        <p class="lock">28 возражений + урок в папке</p>
-        <div class="pf"><span>smile sales agency</span><b>демо</b></div>
-      </article>
-    </div>
-    <div class="demo-hint"><span>← листайте →</span><div class="pager" id="pager"><i class="on"></i><i></i><i></i><i></i></div></div>
+    <div class="dmeta"><strong id="dN">50+</strong><span id="dL">страниц в схеме дожима</span></div>
+    <div class="strip" data-k="s01"><button class="pg" type="button" aria-label="Открыть страницу 1"><img src="img/pages/s01-01.webp" alt="Схема дожима, страница-фрагмент 1" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 2"><img src="img/pages/s01-02.webp" alt="Схема дожима, страница-фрагмент 2" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 3"><img src="img/pages/s01-03.webp" alt="Схема дожима, страница-фрагмент 3" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 4"><img src="img/pages/s01-04.webp" alt="Схема дожима, страница-фрагмент 4" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 5"><img src="img/pages/s01-05.webp" alt="Схема дожима, страница-фрагмент 5" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 6"><img src="img/pages/s01-06.webp" alt="Схема дожима, страница-фрагмент 6" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 7"><img src="img/pages/s01-07.webp" alt="Схема дожима, страница-фрагмент 7" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 8"><img src="img/pages/s01-08.webp" alt="Схема дожима, страница-фрагмент 8" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 9"><img src="img/pages/s01-09.webp" alt="Схема дожима, страница-фрагмент 9" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 10"><img src="img/pages/s01-10.webp" alt="Схема дожима, страница-фрагмент 10" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 11"><img src="img/pages/s01-11.webp" alt="Схема дожима, страница-фрагмент 11" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 12"><img src="img/pages/s01-12.webp" alt="Схема дожима, страница-фрагмент 12" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 13"><img src="img/pages/s01-13.webp" alt="Схема дожима, страница-фрагмент 13" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 14"><img src="img/pages/s01-14.webp" alt="Схема дожима, страница-фрагмент 14" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 15"><img src="img/pages/s01-15.webp" alt="Схема дожима, страница-фрагмент 15" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 16"><img src="img/pages/s01-16.webp" alt="Схема дожима, страница-фрагмент 16" width="400" height="566" loading="lazy"></button><div class="more"><b>+34</b><span>страниц ещё в полной версии</span></div></div>
+    <div class="strip" data-k="s02" hidden><button class="pg" type="button" aria-label="Открыть страницу 1"><img src="img/pages/s02-01.webp" alt="Работа с возражениями, страница-фрагмент 1" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 2"><img src="img/pages/s02-02.webp" alt="Работа с возражениями, страница-фрагмент 2" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 3"><img src="img/pages/s02-03.webp" alt="Работа с возражениями, страница-фрагмент 3" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 4"><img src="img/pages/s02-04.webp" alt="Работа с возражениями, страница-фрагмент 4" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 5"><img src="img/pages/s02-05.webp" alt="Работа с возражениями, страница-фрагмент 5" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 6"><img src="img/pages/s02-06.webp" alt="Работа с возражениями, страница-фрагмент 6" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 7"><img src="img/pages/s02-07.webp" alt="Работа с возражениями, страница-фрагмент 7" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 8"><img src="img/pages/s02-08.webp" alt="Работа с возражениями, страница-фрагмент 8" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 9"><img src="img/pages/s02-09.webp" alt="Работа с возражениями, страница-фрагмент 9" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 10"><img src="img/pages/s02-10.webp" alt="Работа с возражениями, страница-фрагмент 10" width="400" height="566" loading="lazy"></button><div class="more"><b>+8</b><span>страниц ещё в полной версии</span></div></div>
+    <div class="strip" data-k="s06" hidden><button class="pg" type="button" aria-label="Открыть страницу 1"><img src="img/pages/s06-01.webp" alt="Адаптация сотрудника, страница-фрагмент 1" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 2"><img src="img/pages/s06-02.webp" alt="Адаптация сотрудника, страница-фрагмент 2" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 3"><img src="img/pages/s06-03.webp" alt="Адаптация сотрудника, страница-фрагмент 3" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 4"><img src="img/pages/s06-04.webp" alt="Адаптация сотрудника, страница-фрагмент 4" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 5"><img src="img/pages/s06-05.webp" alt="Адаптация сотрудника, страница-фрагмент 5" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 6"><img src="img/pages/s06-06.webp" alt="Адаптация сотрудника, страница-фрагмент 6" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 7"><img src="img/pages/s06-07.webp" alt="Адаптация сотрудника, страница-фрагмент 7" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 8"><img src="img/pages/s06-08.webp" alt="Адаптация сотрудника, страница-фрагмент 8" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 9"><img src="img/pages/s06-09.webp" alt="Адаптация сотрудника, страница-фрагмент 9" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 10"><img src="img/pages/s06-10.webp" alt="Адаптация сотрудника, страница-фрагмент 10" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 11"><img src="img/pages/s06-11.webp" alt="Адаптация сотрудника, страница-фрагмент 11" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 12"><img src="img/pages/s06-12.webp" alt="Адаптация сотрудника, страница-фрагмент 12" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 13"><img src="img/pages/s06-13.webp" alt="Адаптация сотрудника, страница-фрагмент 13" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 14"><img src="img/pages/s06-14.webp" alt="Адаптация сотрудника, страница-фрагмент 14" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 15"><img src="img/pages/s06-15.webp" alt="Адаптация сотрудника, страница-фрагмент 15" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 16"><img src="img/pages/s06-16.webp" alt="Адаптация сотрудника, страница-фрагмент 16" width="400" height="566" loading="lazy"></button><div class="more"><b>+90</b><span>страниц ещё в полной версии</span></div></div>
+    <div class="strip" data-k="s07" hidden><button class="pg" type="button" aria-label="Открыть страницу 1"><img src="img/pages/s07-01.webp" alt="Регламент куратора, страница-фрагмент 1" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 2"><img src="img/pages/s07-02.webp" alt="Регламент куратора, страница-фрагмент 2" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 3"><img src="img/pages/s07-03.webp" alt="Регламент куратора, страница-фрагмент 3" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 4"><img src="img/pages/s07-04.webp" alt="Регламент куратора, страница-фрагмент 4" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 5"><img src="img/pages/s07-05.webp" alt="Регламент куратора, страница-фрагмент 5" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 6"><img src="img/pages/s07-06.webp" alt="Регламент куратора, страница-фрагмент 6" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 7"><img src="img/pages/s07-07.webp" alt="Регламент куратора, страница-фрагмент 7" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 8"><img src="img/pages/s07-08.webp" alt="Регламент куратора, страница-фрагмент 8" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 9"><img src="img/pages/s07-09.webp" alt="Регламент куратора, страница-фрагмент 9" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 10"><img src="img/pages/s07-10.webp" alt="Регламент куратора, страница-фрагмент 10" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 11"><img src="img/pages/s07b-01.webp" alt="Регламент куратора, страница-фрагмент 11" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 12"><img src="img/pages/s07b-02.webp" alt="Регламент куратора, страница-фрагмент 12" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 13"><img src="img/pages/s07b-03.webp" alt="Регламент куратора, страница-фрагмент 13" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 14"><img src="img/pages/s07b-04.webp" alt="Регламент куратора, страница-фрагмент 14" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 15"><img src="img/pages/s07b-05.webp" alt="Регламент куратора, страница-фрагмент 15" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 16"><img src="img/pages/s07b-06.webp" alt="Регламент куратора, страница-фрагмент 16" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 17"><img src="img/pages/s07b-07.webp" alt="Регламент куратора, страница-фрагмент 17" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 18"><img src="img/pages/s07b-08.webp" alt="Регламент куратора, страница-фрагмент 18" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 19"><img src="img/pages/s07b-09.webp" alt="Регламент куратора, страница-фрагмент 19" width="400" height="566" loading="lazy"></button><button class="pg" type="button" aria-label="Открыть страницу 20"><img src="img/pages/s07b-10.webp" alt="Регламент куратора, страница-фрагмент 20" width="400" height="566" loading="lazy"></button><div class="more"><b>+51</b><span>страниц ещё в полной версии</span></div></div>
+    <p class="dhint">← листайте · нажмите на страницу, чтобы увеличить</p>
+    <p class="notbox" data-rv><b>Важно:</b> это не скрипты «под ключ», а механика. Результат даёт внедрение с вашими ценами, врачами и контролем.</p>
   </div>
 </section>
 
-<!-- ЧТО ВНУТРИ -->
-<section class="band cloud" id="inside">
-  <div class="wrap narrow">
-    <div class="stack">
-      <p class="eyebrow" data-rv>Что внутри</p>
-      <h2 class="h2" data-rv>17 файлов. <span class="soft">Одна система.</span></h2>
-    </div>
-    <div class="gets" data-rv>
-      <details class="get"><summary><span class="no">01</span><span class="ben">Каждая заявка доходит до решения</span><span class="file">Схема дожима · 15 этапов</span><span class="pl"></span></summary><p class="in">Квалификация, типы запроса, цена в рамке, молчуны, окно работы, CRM, KPI, запуск за 4 недели.</p></details>
-      <details class="get"><summary><span class="no">02</span><span class="ben">Менеджер слышит настоящую причину</span><span class="file">Работа с возражениями · урок</span><span class="pl"></span></summary><p class="in">Скрытые возражения, психология решения, как вернуть пациента, который мысленно ушёл.</p></details>
-      <details class="get"><summary><span class="no">03</span><span class="ben">Вся схема на одном листе</span><span class="file">Майнд-карта · PNG</span><span class="pl"></span></summary><p class="in">Шпаргалка для рабочего места менеджера.</p></details>
-      <details class="get"><summary><span class="no">04</span><span class="ben">Доверие через похожий случай</span><span class="file">ТЗ: кейсы «До–После» и видеовизитки врачей</span><span class="pl"></span></summary><p class="in">Какие снимки и ролики собрать по 8 направлениям, чтобы пациент поверил до визита.</p></details>
-      <details class="get"><summary><span class="no">05</span><span class="ben">Новичок готов за 30 дней</span><span class="file">Адаптация сотрудника КЦ · 80+ страниц</span><span class="pl"></span></summary><p class="in">Терминология, направления, цены, звонки, CRM, экзамен и план первого месяца.</p></details>
-      <details class="get"><summary><span class="no">06</span><span class="ben">План лечения превращается в оплату</span><span class="file">Куратор в стоматологии · 2 части</span><span class="pl"></span></summary><p class="in">Как найти куратора, встроить в путь пациента и контролировать по 9 нормативам.</p></details>
-      <details class="get"><summary><span class="no">07</span><span class="ben">Каждый знает свою зону ответственности</span><span class="file">5 регламентов ролей · PDF</span><span class="pl"></span></summary><p class="in">Администратор, менеджер КЦ, менеджер <button class="term" data-term="okk">ОКК</button>, РОП, куратор.</p></details>
-      <details class="get"><summary><span class="no">08</span><span class="ben">Каждый день видно, где теряются деньги</span><span class="file">3 шаблона РНП · Google-таблицы</span><span class="pl"></span></summary><p class="in"><button class="term" data-term="rnp">РНП</button> отдела продаж, таргет + CRM, клиника с двумя филиалами.</p></details>
-    </div>
-    <p class="notbox" data-rv><b>Важно:</b> это не скрипты «под ключ», а механика. Результат даёт внедрение с вашими ценами, врачами и контролем.</p>
-    <figure class="illu" data-rv><img src="img/illustration.webp" alt="Иллюстрация: стоматология — это про людей. РОП, администраторы, кураторы, врачи, КЦ, маркетинг, финансы" width="1000" height="1000" loading="lazy"></figure>
-  </div>
-</section>
+<div class="lb" id="lb" hidden role="dialog" aria-label="Просмотр страницы"><img id="lbImg" alt=""><button class="lx" id="lbX" aria-label="Закрыть">×</button><button class="lp" id="lbP" aria-label="Предыдущая">‹</button><button class="ln" id="lbN" aria-label="Следующая">›</button><span class="lc" id="lbC"></span></div>
 
 <!-- АВТОР -->
 <section class="band" id="author">
@@ -562,12 +558,12 @@ h1,h2,h3{margin:0;text-wrap:balance}
     <h2 class="h2" data-rv>Система, которую мы <span class="soft">написали для себя.</span> Теперь для вашей клиники.</h2>
     <div class="price" data-rv>
       <span class="lbl"><i>Акция</i>Цена за всю папку</span>
-      <div class="row"><div><s>20 000 ₽</s><strong>9 900 ₽</strong></div><span class="cur">Россия</span></div>
-      <div class="row"><div><s>108 000 ₸</s><strong>54 000 ₸</strong></div><span class="cur">Казахстан</span></div>
-      <p class="save">Выгода <b>10 100 ₽</b>. Все 17 файлов, доступ к папке на Google Drive.</p>
+      <div class="row"><div><s>17 000 ₽</s><strong>7 490 ₽</strong></div><span class="cur">Россия</span></div>
+      <div class="row"><div><s>92 000 ₸</s><strong>40 000 ₸</strong></div><span class="cur">Казахстан</span></div>
+      <p class="save">Выгода <b>9 510 ₽</b>. Все 17 файлов и бонус «Регламент куратора», доступ к папке на Google Drive.</p>
     </div>
     <div class="btns" data-rv>
-      <a class="btn btn-main" href="https://t.me/thedmkr" target="_blank" rel="noopener">Купить за 9 900 ₽ в Telegram</a>
+      <a class="btn btn-main" href="https://t.me/thedmkr" target="_blank" rel="noopener">Купить за 7 490 ₽ в Telegram</a>
       <a class="link" href="#video">Смотреть обзор</a>
     </div>
   </div>
@@ -578,7 +574,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 
 <div class="dock" id="dock" aria-hidden="true">
   <div class="in">
-    <p><s>20 000 ₽</s>9 900 ₽<span>акция · или 54 000 ₸</span></p>
+    <p><s>17 000 ₽</s>7 490 ₽<span>акция · или 40 000 ₸</span></p>
     <a class="btn btn-main" href="https://t.me/thedmkr" target="_blank" rel="noopener" tabindex="-1">Получить</a>
   </div>
 </div>
@@ -658,14 +654,6 @@ h1,h2,h3{margin:0;text-wrap:balance}
     [].slice.call(document.querySelectorAll('[data-count]')).forEach(function(el){el.textContent='0'+(el.dataset.suf||'');cio.observe(el)});
   }
 
-  /* тип запроса */
-  var segBtns=[].slice.call(document.querySelectorAll('.seg button'));
-  var panels=[].slice.call(document.querySelectorAll('.panel'));
-  segBtns.forEach(function(b){b.addEventListener('click',function(){
-    segBtns.forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false')});
-    panels.forEach(function(p){p.hidden=p.dataset.k!==b.dataset.k});
-  })});
-
   /* пояснения терминов */
   var T={
     kc:['КЦ','Колл-центр: менеджеры, которые первыми отвечают на заявки, квалифицируют пациента и записывают на консультацию.'],
@@ -689,20 +677,25 @@ h1,h2,h3{margin:0;text-wrap:balance}
   document.getElementById('popClose').addEventListener('click',closePop);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closePop()});
 
-  /* демо-карусель */
-  var slides=document.getElementById('slides');
-  var tabs=[].slice.call(document.querySelectorAll('.tab'));
-  var dots=[].slice.call(document.querySelectorAll('#pager i'));
-  var pages=[].slice.call(slides.children);
-  function mark(i){
-    tabs.forEach(function(t,k){t.setAttribute('aria-selected',k===i?'true':'false')});
-    dots.forEach(function(d,k){d.classList.toggle('on',k===i)});
-  }
-  tabs.forEach(function(t,i){t.addEventListener('click',function(){slides.scrollTo({left:pages[i].offsetLeft-pages[0].offsetLeft,behavior:'smooth'});mark(i)})});
-  var raf;
-  slides.addEventListener('scroll',function(){cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){
-    var w=pages[0].getBoundingClientRect().width+16;mark(Math.max(0,Math.min(pages.length-1,Math.round(slides.scrollLeft/w))));
-  })},{passive:true});
+  /* демо: настоящие страницы */
+  var dtabs=[].slice.call(document.querySelectorAll('.dtab')),strips=[].slice.call(document.querySelectorAll('.strip'));
+  dtabs.forEach(function(t){t.addEventListener('click',function(){
+    dtabs.forEach(function(x){x.setAttribute('aria-selected',x===t?'true':'false')});
+    strips.forEach(function(st){st.hidden=st.dataset.k!==t.dataset.k;if(!st.hidden)st.scrollLeft=0});
+    document.getElementById('dN').textContent=t.dataset.n;document.getElementById('dL').textContent=t.dataset.l;
+  })});
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbC=document.getElementById('lbC'),lbList=[],lbI=0;
+  function lbShow(){lbImg.src=lbList[lbI].src;lbImg.alt=lbList[lbI].alt;lbC.textContent=(lbI+1)+' / '+lbList.length}
+  document.addEventListener('click',function(e){
+    var pg=e.target.closest('.pg');if(!pg)return;
+    lbList=[].slice.call(pg.parentNode.querySelectorAll('.pg img'));lbI=lbList.indexOf(pg.querySelector('img'));lbShow();lb.hidden=false;
+  });
+  function lbStep(d){lbI=(lbI+d+lbList.length)%lbList.length;lbShow()}
+  document.getElementById('lbX').addEventListener('click',function(){lb.hidden=true});
+  document.getElementById('lbP').addEventListener('click',function(){lbStep(-1)});
+  document.getElementById('lbN').addEventListener('click',function(){lbStep(1)});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.hidden=true});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowRight')lbStep(1);if(e.key==='ArrowLeft')lbStep(-1)});
 
   /* шапка и нижняя кнопка */
   var nav=document.getElementById('nav'),dock=document.getElementById('dock'),hero=document.querySelector('.hero'),buy=document.getElementById('buy');
