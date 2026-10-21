@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Схема дожима пациентов на имплантацию · Smile Sales">
-<meta property="og:description" content="Система для отдела продаж стоматологии: 18 файлов, 350+ страниц, внедрение за 4 недели. 7 000 ₽ по акции, бонус: куратор в стоматологии.">
+<meta property="og:description" content="Система для отдела продаж стоматологии: 18 файлов, 350+ страниц, внедрение за 1–2 недели. 7 000 ₽ до 30 ноября, бонус: куратор в стоматологии.">
 <meta property="og:image" content="https://bmkagencykz-boop.github.io/shema-dozhima/img/og-7000.jpg">
 <meta property="og:url" content="https://bmkagencykz-boop.github.io/shema-dozhima/">
 <meta name="twitter:card" content="summary_large_image">
@@ -13,7 +13,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%23111111%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27%23E53935%27/%3E%3C/svg%3E">
 <title>Схема дожима Smile Sales</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Система дожима пациентов на имплантацию для отдела продаж стоматологии: 18 файлов, 350+ страниц, внедрение за 4 недели. Дмитрий Крюков, Smile Sales Agency.">
+<meta name="description" content="Система дожима пациентов на имплантацию для отдела продаж стоматологии: 18 файлов, 350+ страниц, внедрение за 1–2 недели. Дмитрий Крюков, Smile Sales Agency.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Days+One&family=Montserrat:wght@400;500;600;700;800&display=swap">
@@ -278,6 +278,43 @@ h1,h2,h3{margin:0;text-wrap:balance}
   [data-rv].pre{opacity:1;transform:none}
   .hero-hand path{stroke-dashoffset:0}
 }
+
+/* ОТЛИЧИЯ */
+.diffs{display:grid;gap:12px}
+@media (min-width:640px){.diffs{grid-template-columns:1fr 1fr}}
+.diff{border-radius:20px;background:var(--paper);border:1px solid var(--line);padding:20px}
+.diff i{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--red-soft);color:var(--red);font-style:normal;font-weight:800;font-size:16px}
+.diff h3{font-size:18px;font-weight:800;margin:12px 0 6px;letter-spacing:-.01em}
+.diff p{font-size:15px;color:var(--ink-2)}
+.gets{margin-top:clamp(40px,7vw,64px);border-radius:24px;background:var(--ink);color:#fff;padding:26px 22px}
+.gets h3{font-size:clamp(22px,5.6vw,30px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.gets ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px}
+.gets li{display:grid;grid-template-columns:26px 1fr;gap:8px;font-size:16px;color:#E6E6E6}
+.gets li::before{content:"";width:20px;height:20px;border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat;margin-top:2px}
+.gets li b{color:#fff}
+
+/* ТАЙМЕР */
+.deadline{font-size:13px;font-weight:700;color:var(--red)}
+.timer{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.timer div{background:#262626;border-radius:14px;padding:12px 4px 10px;text-align:center}
+.timer b{display:block;font-size:clamp(26px,7.4vw,36px);font-weight:800;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.timer span{display:block;margin-top:6px;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#9A9A9A}
+.timer .over{grid-column:1/-1;font-size:15px;color:#E6E6E6;background:none;padding:0;text-align:left}
+.price .until{font-size:14px;color:#E6E6E6;font-weight:600}
+.price .until b{color:var(--red)}
+
+/* ОТЗЫВЫ */
+.rvw{position:relative;border-radius:24px;background:var(--paper);padding:26px 22px 22px;box-shadow:0 1px 0 var(--line),0 20px 50px rgba(0,0,0,.08);min-height:240px;display:grid;align-content:space-between;gap:18px}
+.rvw::before{content:"“";position:absolute;top:6px;right:18px;font-family:var(--latin);font-size:80px;line-height:1;color:var(--red-soft)}
+.rvw .txt{position:relative;font-size:17px;line-height:1.55;transition:opacity .35s}
+.rvw .who{display:flex;align-items:center;gap:12px;transition:opacity .35s}
+.rvw .who i{width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:800}
+.rvw .who b{display:block;font-size:15px}
+.rvw .who span{display:block;font-size:13px;color:var(--mute)}
+.rvw.fade .txt,.rvw.fade .who{opacity:0}
+.rvdots{display:flex;gap:6px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+.rvdots button{width:8px;height:8px;border-radius:50%;border:0;padding:0;background:var(--dim);cursor:pointer;transition:all .3s}
+.rvdots button[aria-current="true"]{background:var(--red);width:22px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -303,10 +340,10 @@ h1,h2,h3{margin:0;text-wrap:balance}
       <p class="promise">Пошаговая система для отдела продаж: что делать с каждой заявкой, чтобы пациент дошёл до кресла и оплатил лечение.</p>
       <ul class="checks">
         <li><span><b>18 файлов, 350+ страниц:</b> схема, шпаргалка, регламенты, шаблоны</span></li>
-        <li><span><b>Внедрение за 4 недели</b> силами вашей команды</span></li>
+        <li><span><b>Внедрение за 1–2 недели</b> силами вашей команды</span></li>
         <li><span><b>Бонус:</b> руководство и рабочая книга куратора, 115 страниц</span></li>
       </ul>
-      <div class="price-line"><span class="tag">Акция</span><s>17 000 ₽</s><strong>7 000 ₽</strong><span class="kz">или 38 000 ₸ за всю папку</span></div>
+      <div class="price-line"><span class="tag">Акция</span><s>17 000 ₽</s><strong>7 000 ₽</strong><span class="kz">или 38 000 ₸ · <span class="deadline">цена действует до 30 ноября</span></span></div>
       <div class="btns">
         <a class="btn btn-main" href="https://t.me/thedmkr" target="_blank" rel="noopener">Получить папку</a>
         <a class="link" href="#inside">Что внутри</a>
@@ -320,34 +357,41 @@ h1,h2,h3{margin:0;text-wrap:balance}
   <div class="wrap">
     <div class="head">
       <p class="eyebrow" data-rv>Результат</p>
-      <h2 class="h2" data-rv>Цифры, на которые схема <span class="soft">настраивает отдел продаж</span></h2>
+      <h2 class="h2" data-rv>Показатели отделов продаж, <span class="soft">которые работают по схеме</span></h2>
     </div>
     <div class="kpis">
-      <div class="kpi" data-rv><strong>5 <em>мин</em></strong><span>первый ответ на заявку, а не «перезвоним»</span></div>
-      <div class="kpi" data-rv style="--d:.06s"><strong data-count="40" data-pre="35–" data-suf="%">35–40%</strong><span>заявок доходят до записи на консультацию</span></div>
-      <div class="kpi" data-rv><strong data-count="75" data-suf="%">75%</strong><span>записанных приходят на платную консультацию</span></div>
-      <div class="kpi" data-rv style="--d:.06s"><strong data-count="45" data-suf="%+">45%+</strong><span>консультаций превращаются в лечение с куратором</span></div>
+      <div class="kpi" data-rv><strong>1 <em>мин</em></strong><span>первый ответ на заявку</span></div>
+      <div class="kpi" data-rv style="--d:.06s"><strong data-count="78" data-suf="%">78%</strong><span>заявок доходят до консультации</span></div>
+      <div class="kpi" data-rv><strong data-count="90" data-suf="%">90%</strong><span>записанных приходят на консультацию</span></div>
+      <div class="kpi" data-rv style="--d:.06s"><strong data-count="80" data-suf="%">80%</strong><span>консультаций переходят в лечение</span></div>
     </div>
-    <p class="fine" data-rv>Нормы из раздела KPI схемы. Через месяц цели ставятся от ваших собственных цифр.</p>
   </div>
 </section>
 
-<!-- ПУТЬ ПАЦИЕНТА -->
-<section class="band" id="how">
+<!-- ОТЛИЧИЯ -->
+<section class="band" id="why">
   <div class="wrap">
     <div class="head">
-      <p class="eyebrow" data-rv>Как это работает</p>
-      <h2 class="h2" data-rv>Путь пациента <span class="soft">от заявки до оплаты</span></h2>
-      <p class="sub" data-rv>Схема ведёт по шагам на примере пациентки Алины. У каждого шага есть правило, срок и ответственный.</p>
+      <p class="eyebrow" data-rv>Чем отличается</p>
+      <h2 class="h2" data-rv>Не теория и не скрипты. <span class="soft">Система, которая уже работает.</span></h2>
     </div>
-    <div class="path" id="path">
-      <div class="rail"><i></i></div>
-      <div class="step" data-n="1" data-rv><div class="t"><h3>Первый контакт</h3><span class="when">24 часа</span></div><p>Ответ за 5 минут. 8 фактов о пациенте до разговора о цене.</p></div>
-      <div class="step" data-n="2" data-rv><div class="t"><h3>До записи</h3><span class="when">1–3 дня</span></div><p>Цена в рамке, кейс под его случай, два окна в ближайшие 48 часов.</p></div>
-      <div class="step" data-n="3" data-rv><div class="t"><h3>До кресла</h3><span class="when">48 часов</span></div><p>Видео врача, напоминания, бриф врачу. Неявка без упрёков.</p></div>
-      <div class="step" data-n="4" data-rv><div class="t"><h3>Если замолчал</h3><span class="when">любой шаг</span></div><p>Маршрут по точке молчания. Не больше 7 касаний за 14 дней.</p></div>
-      <div class="step" data-n="5" data-rv><div class="t"><h3>Консультация → лечение</h3><span class="when">90 дней</span></div><p>План письменно, куратор, касания на 2, 5, 10, 21, 45 и 90 день.</p></div>
-      <div class="step" data-n="6" data-rv><div class="t"><h3>Холодная база</h3><span class="when">30–365 дней</span></div><p>Возврат по реальным поводам, не чаще раза в месяц.</p></div>
+    <div class="diffs">
+      <div class="diff" data-rv><i>✓</i><h3>Написано практиками</h3><p>Схему два года писали для своих колл-центров. Сейчас по ней работают 15+ КЦ и 60+ стоматологических кресел.</p></div>
+      <div class="diff" data-rv style="--d:.06s"><i>→</i><h3>Механика, а не заученные фразы</h3><p>Менеджер понимает, почему работает каждый шаг, и сам подбирает слова. Пациент не слышит шаблонов.</p></div>
+      <div class="diff" data-rv><i>₽</i><h3>Весь путь до оплаты</h3><p>От первого сообщения до оплаты лечения и 90 дней дожима после консультации. Не только «как ответить на возражение».</p></div>
+      <div class="diff" data-rv style="--d:.06s"><i>☰</i><h3>Для всей команды</h3><p>У каждой роли свой документ: РОП, менеджер КЦ, администратор, куратор, маркетолог.</p></div>
+    </div>
+    <div class="gets" data-rv>
+      <h3>Что вы получите после оплаты</h3>
+      <ul>
+        <li><span><b>Доступ к папке на Google Drive:</b> 18 файлов, 350+ страниц</span></li>
+        <li><span><b>Схему дожима:</b> порядок действий для каждого типа заявки</span></li>
+        <li><span><b>Шпаргалку на смену</b> и майнд-карту схемы на одном листе</span></li>
+        <li><span><b>Программу адаптации</b> нового сотрудника на 123 страницы</span></li>
+        <li><span><b>Задачи ролей, шаблоны РНП</b> и чек-лист аудита отдела продаж</span></li>
+        <li><span><b>Бонус:</b> руководство и рабочую книгу куратора, 115 страниц</span></li>
+        <li><span><b>Ответы на вопросы</b> по внедрению в Telegram</span></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -415,16 +459,15 @@ h1,h2,h3{margin:0;text-wrap:balance}
   <div class="wrap">
     <div class="head">
       <p class="eyebrow" data-rv>Кто внедряет</p>
-      <h2 class="h2" data-rv>Ваша команда. <span class="soft">За 4 недели.</span></h2>
+      <h2 class="h2" data-rv>Ваша команда. <span class="soft">За 1–2 недели.</span></h2>
       <p class="sub" data-rv>Без внешних подрядчиков. В папке расписано, кто что читает и делает.</p>
     </div>
     <div class="weeks">
-      <div class="week" data-rv><small>Неделя 1 <i>руководитель</i></small><h3>Основа</h3><p>Читает схему, заполняет паспорт клиники, решает формат консультации, настраивает CRM.</p></div>
-      <div class="week" data-rv style="--d:.06s"><small>Неделя 2 <i>маркетолог</i></small><h3>Доверие</h3><p>Собирает кейсы «до и после», снимает видеовизитки врачей.</p></div>
-      <div class="week" data-rv><small>Неделя 3 <i>менеджеры</i></small><h3>Обучение</h3><p>Изучают схему и возражения, отрабатывают диалоги. Новичок проходит адаптацию.</p></div>
-      <div class="week last" data-rv style="--d:.06s"><small>Неделя 4 <i>вся команда</i></small><h3>Работа по схеме</h3><p>Руководитель каждый день смотрит задачи в CRM и раз в неделю разбирает диалоги.</p></div>
+      <div class="week" data-rv><small>Дни 1–2 <i>руководитель</i></small><h3>Основа</h3><p>Читает схему, заполняет паспорт клиники, настраивает CRM.</p></div>
+      <div class="week" data-rv style="--d:.06s"><small>Дни 3–4 <i>маркетолог</i></small><h3>Доверие</h3><p>Собирает кейсы «до и после», снимает видео врачей.</p></div>
+      <div class="week" data-rv><small>Дни 5–7 <i>менеджеры</i></small><h3>Обучение</h3><p>Изучают схему и возражения по шпаргалке, отрабатывают диалоги.</p></div>
+      <div class="week last" data-rv style="--d:.06s"><small>2-я неделя <i>вся команда</i></small><h3>Работа по схеме</h3><p>Руководитель каждый день смотрит задачи в CRM и разбирает диалоги.</p></div>
     </div>
-    <p class="must" data-rv><b>Без чего не заработает:</b> паспорт клиники, кейсы и видео врачей, настроенная CRM и руководитель, который проверяет работу. Это не набор готовых фраз.</p>
     <figure class="illu" data-rv><img src="img/illustration.webp" alt="Иллюстрация: стоматология — это про людей. РОП, администраторы, кураторы, врачи, КЦ, маркетинг, финансы" width="1000" height="1000" loading="lazy"></figure>
   </div>
 </section>
@@ -468,14 +511,34 @@ h1,h2,h3{margin:0;text-wrap:balance}
   </div>
 </section>
 
+<!-- ОТЗЫВЫ: блок появится, когда в REVIEWS (скрипт внизу) будут настоящие отзывы -->
+<section class="band cloud" id="reviews" hidden>
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Отзывы</p>
+      <h2 class="h2">Что говорят <span class="soft">руководители клиник</span></h2>
+    </div>
+    <div class="rvw" id="rvw" aria-live="polite"><p class="txt" id="rvT"></p><div class="who"><i id="rvI"></i><div><b id="rvN"></b><span id="rvR"></span></div></div></div>
+    <div class="rvdots" id="rvD"></div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="band">
   <div class="wrap">
     <h2 class="h2" data-rv style="margin-bottom:24px">Вопросы</h2>
     <div class="faq">
       <details><summary>Как получить папку?</summary><p>Напишите в Telegram @thedmkr. Оплата в рублях или тенге, после оплаты открываем доступ к папке на Google Drive.</p></details>
+      <details><summary>До какого числа действует цена 7 000 ₽?</summary><p>До 30 ноября включительно. Потом цена вернётся к 17 000 ₽.</p></details>
+      <details><summary>Сколько времени займёт внедрение?</summary><p>1–2 недели. В папке расписано по дням, кто что делает: руководитель, маркетолог, менеджеры.</p></details>
+      <details><summary>Кто в клинике должен этим заниматься?</summary><p>Руководитель или РОП запускает, команда работает по схеме. Внешние подрядчики не нужны.</p></details>
+      <details><summary>У нас нет колл-центра и куратора. Подойдёт?</summary><p>Да. Схема описана и для клиники без куратора: тогда пациента после консультации ведёт администратор.</p></details>
       <details><summary>У нас не только имплантация. Подойдёт?</summary><p>Да. Схема описана на имплантации, но механика переносится на любое направление. Цены везде в вашей валюте.</p></details>
       <details><summary>Это готовые скрипты?</summary><p>Нет. Это порядок действий и правила на каждом шаге. Менеджер понимает логику и сам подбирает слова под пациента.</p></details>
+      <details><summary>Какая нужна CRM?</summary><p>Любая, где есть карточки, задачи и причины отказа. В схеме описано, какие поля и задачи настроить.</p></details>
+      <details><summary>В каком формате материалы?</summary><p>PDF, Google-таблицы и Word в одной папке на Google Drive. Открываются с телефона и компьютера.</p></details>
+      <details><summary>Подходит для Казахстана и России?</summary><p>Да. Схема работает в клиниках обеих стран, оплата в рублях или тенге.</p></details>
+      <details><summary>Можно задать вопросы по внедрению?</summary><p>Да, пишите в Telegram @thedmkr.</p></details>
     </div>
   </div>
 </section>
@@ -488,6 +551,8 @@ h1,h2,h3{margin:0;text-wrap:balance}
     </div>
     <div class="price" data-rv>
       <span class="lbl"><span class="tag">Акция</span>Вся папка + бонус</span>
+      <p class="until">Цена действует до <b>30 ноября</b>. До конца акции:</p>
+      <div class="timer" id="timer"><div><b id="tD">00</b><span>дней</span></div><div><b id="tH">00</b><span>часов</span></div><div><b id="tM">00</b><span>минут</span></div><div><b id="tS">00</b><span>секунд</span></div></div>
       <div class="row"><div><s>17 000 ₽</s><strong>7 000 ₽</strong></div><span class="cur">Россия</span></div>
       <div class="row"><div><s>92 000 ₸</s><strong>38 000 ₸</strong></div><span class="cur">Казахстан</span></div>
       <p class="save">Выгода <b>10 000 ₽</b>. 18 файлов, 350+ страниц, бонус «Куратор».</p>
@@ -504,7 +569,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 
 <div class="dock" id="dock" aria-hidden="true">
   <div class="in">
-    <p><s>17 000 ₽</s>7 000 ₽<span>акция · или 38 000 ₸</span></p>
+    <p><s>17 000 ₽</s>7 000 ₽<span>до 30 ноября · или 38 000 ₸</span></p>
     <a class="btn btn-main" href="https://t.me/thedmkr" target="_blank" rel="noopener" tabindex="-1">Получить</a>
   </div>
 </div>
@@ -547,12 +612,33 @@ h1,h2,h3{margin:0;text-wrap:balance}
     });
   }
 
-  /* линия пути пациента */
-  var path=document.getElementById('path'),steps=[].slice.call(path.querySelectorAll('.step'));
-  function paintPath(){
-    var r=path.getBoundingClientRect(),h=window.innerHeight;
-    path.style.setProperty('--p',reduce?1:Math.max(0,Math.min(1,(h*0.62-r.top)/r.height)));
-    steps.forEach(function(s){s.classList.toggle('on',reduce||s.getBoundingClientRect().top<h*0.64)});
+  /* таймер акции: до 30 ноября 2026, 23:59:59 по Москве */
+  var END=Date.UTC(2026,10,30,20,59,59),tm=document.getElementById('timer');
+  function pad(n){return (n<10?'0':'')+n}
+  function tick(){
+    var d=END-Date.now();
+    if(d<=0){tm.innerHTML='<p class="over">Акция завершилась. Актуальную цену уточните в Telegram @thedmkr.</p>';return}
+    var s=Math.floor(d/1000);
+    document.getElementById('tD').textContent=pad(Math.floor(s/86400));
+    document.getElementById('tH').textContent=pad(Math.floor(s%86400/3600));
+    document.getElementById('tM').textContent=pad(Math.floor(s%3600/60));
+    document.getElementById('tS').textContent=pad(s%60);
+    setTimeout(tick,1000);
+  }
+  tick();
+
+  /* отзывы: вставьте сюда только настоящие отзывы клиентов. Пока список пуст, блок скрыт */
+  var REVIEWS=[
+    /* {text:'Текст отзыва', name:'Имя', role:'Должность, город'}, */
+  ];
+  if(REVIEWS.length){
+    var sec=document.getElementById('reviews'),card=document.getElementById('rvw'),dotsBox=document.getElementById('rvD'),ri=0,rt;
+    sec.hidden=false;
+    REVIEWS.forEach(function(r,i){var b=document.createElement('button');b.setAttribute('aria-label','Отзыв '+(i+1));b.addEventListener('click',function(){show(i)});dotsBox.appendChild(b)});
+    function fill(i){var r=REVIEWS[i];document.getElementById('rvT').textContent=r.text;document.getElementById('rvN').textContent=r.name;document.getElementById('rvR').textContent=r.role||'';document.getElementById('rvI').textContent=(r.name||'?').charAt(0);
+      [].forEach.call(dotsBox.children,function(d,k){d.setAttribute('aria-current',k===i?'true':'false')})}
+    function show(i){clearTimeout(rt);card.classList.add('fade');setTimeout(function(){ri=i;fill(i);card.classList.remove('fade')},reduce?0:300);rt=setTimeout(function(){show((ri+1)%REVIEWS.length)},7000)}
+    fill(0);rt=setTimeout(function(){show(1%REVIEWS.length)},7000);
   }
 
   /* демо: настоящие страницы */
@@ -581,7 +667,6 @@ h1,h2,h3{margin:0;text-wrap:balance}
     nav.classList.toggle('scrolled',window.scrollY>8);
     var show=hero.getBoundingClientRect().bottom<0&&buy.getBoundingClientRect().top>window.innerHeight*0.7;
     dock.classList.toggle('show',show);dock.setAttribute('aria-hidden',show?'false':'true');dock.querySelector('a').tabIndex=show?0:-1;
-    paintPath();
   }
   window.addEventListener('scroll',onScroll,{passive:true});
   window.addEventListener('resize',onScroll);
