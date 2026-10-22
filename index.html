@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Больше пациентов на имплантацию из тех же заявок · Smile Sales">
-<meta property="og:description" content="Система для отдела продаж стоматологии от Дмитрия Крюкова. 18 документов, внедрение за 1–2 недели. 7 000 ₽ до 26 октября.">
-<meta property="og:image" content="https://bmkagencykz-boop.github.io/shema-dozhima/img/og-7000.jpg">
+<meta property="og:title" content="Схема дожима + регламент куратора · Smile Sales">
+<meta property="og:description" content="Как довести заявку на имплантацию до оплаты лечения. 18 документов для отдела продаж стоматологии. 5 000 ₽ до 26 октября.">
+<meta property="og:image" content="https://bmkagencykz-boop.github.io/shema-dozhima/img/og-5000.jpg">
 <meta property="og:url" content="https://bmkagencykz-boop.github.io/shema-dozhima/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%23111111%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27%23E53935%27/%3E%3C/svg%3E">
 <title>Схема дожима Smile Sales</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Система для отдела продаж стоматологии: что делать с каждой заявкой на имплантацию до оплаты лечения. 18 документов, внедрение за 1–2 недели. Дмитрий Крюков, Smile Sales Agency.">
+<meta name="description" content="Схема дожима пациентов и регламент куратора для стоматологии: как довести заявку на имплантацию до оплаты лечения. Дмитрий Крюков, Smile Sales Agency.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:wght@400;500;600;700;800&display=swap">
 <style>
-/* Layout: одна страница. На компьютере две колонки (оффер | доказательства), на телефоне один короткий столбец */
+/* Layout: три коротких блока — два главных продукта, остальное + видео, оплата. Чёрно-белый, акцент красный */
 :root{
   --ink:#111111;
   --ink-2:#4D4D4D;
@@ -35,68 +35,75 @@
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
+html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
 img{max-width:100%}
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:4px}
 p,h1,h2,h3{margin:0}
-h1,h2{text-wrap:balance}
-
-.wrap{max-width:1120px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+h1,h2,h3{text-wrap:balance}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.blk{padding-block:22px 30px}
+.blk.cloud{background:var(--cloud)}
+.blk.dark{background:var(--ink);color:#fff}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.h2{font-size:clamp(20px,5.4vw,28px);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin-bottom:14px}
 
 /* шапка */
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;height:54px}
 .logo{font-weight:800;font-size:12.5px;letter-spacing:.04em;white-space:nowrap}
 .logo i{font-style:normal;color:var(--red)}
-.top a.tg{font-size:13px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
-.top a.tg::before{content:"";width:8px;height:8px;border-radius:50%;background:#22C55E;box-shadow:0 0 0 3px rgba(34,197,94,.18)}
+.top a{font-size:13px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.top a b{background:var(--red);color:#fff;border-radius:999px;padding:6px 12px;font-size:12.5px}
 
-/* сетка */
-.grid{display:grid;gap:18px;padding-block:6px 28px}
-@media (min-width:960px){.grid{grid-template-columns:1.05fr .95fr;gap:40px;align-items:start;padding-block:18px 40px}}
-.col{display:grid;gap:16px;min-width:0;align-content:start}
-
-/* оффер */
-.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
-h1{font-size:clamp(28px,7.6vw,46px);font-weight:800;line-height:1.05;letter-spacing:-.03em}
+/* блок 1: два продукта */
+.hero{display:grid;gap:14px;padding-top:4px}
+h1{font-size:clamp(27px,7.4vw,44px);font-weight:800;line-height:1.05;letter-spacing:-.03em}
 h1 em{font-style:normal;color:var(--red)}
-.lead{font-size:16px;color:var(--ink-2);max-width:34em}
+.lead{font-size:15.5px;color:var(--ink-2);max-width:40em}
 .author{display:flex;align-items:center;gap:12px}
-.author img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 8%;background:var(--cloud);flex:0 0 52px}
-.author b{display:block;font-size:14.5px}
-.author span{display:block;font-size:12.5px;color:var(--mute);line-height:1.35}
-
+.author img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:50% 8%;background:var(--cloud);flex:0 0 46px}
+.author b{display:block;font-size:14px}
+.author span{display:block;font-size:12px;color:var(--mute);line-height:1.35}
+.duo{display:grid;gap:12px;margin-top:4px}
+@media (min-width:760px){.duo{grid-template-columns:1fr 1fr;gap:16px}}
+.prod{display:grid;grid-template-columns:104px 1fr;gap:14px;border:1px solid var(--line);border-radius:20px;padding:14px;align-items:start;background:var(--paper)}
+.prod.cur{border-color:var(--red);box-shadow:0 0 0 1px var(--red) inset}
+.prod .cv{border:0;padding:0;background:none;cursor:zoom-in;display:grid;gap:6px;text-align:center}
+.prod .cv span{display:block;aspect-ratio:1/1.414;border-radius:8px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 10px 22px rgba(0,0,0,.14);transition:transform .3s var(--ease)}
+.prod .cv:hover span{transform:translateY(-3px) rotate(-1deg)}
+.prod .cv img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.prod .cv small{font-size:10.5px;font-weight:700;color:var(--red)}
+.prod h2{font-size:17px;font-weight:800;line-height:1.2;letter-spacing:-.01em}
+.prod .vol{font-size:12px;color:var(--mute);font-weight:600;margin-top:3px}
+.prod ul{list-style:none;margin:9px 0 0;padding:0;display:grid;gap:6px}
+.prod li{position:relative;padding-left:15px;font-size:13.5px;line-height:1.4;color:var(--ink-2)}
+.prod li::before{content:"";position:absolute;left:2px;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--red)}
+.prod li b{color:var(--ink)}
 .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
 .kpi{background:var(--cloud);border-radius:14px;padding:10px 8px 9px}
 .kpi strong{display:block;font-size:clamp(18px,5.4vw,26px);font-weight:800;line-height:1;letter-spacing:-.02em;white-space:nowrap}
 .kpi strong em{font-style:normal;color:var(--red)}
 .kpi span{display:block;margin-top:5px;font-size:10.5px;line-height:1.25;color:var(--ink-2)}
+.jump{display:flex;align-items:center;justify-content:center;gap:10px;min-height:50px;border-radius:999px;background:var(--red);color:#fff;font-weight:700;text-decoration:none;font-size:15px}
+.jump s{color:#FFC9C7;font-weight:500}
+@media (min-width:760px){.jump{justify-self:start;padding:0 28px}}
 
-/* цена */
-.offer{border-radius:22px;background:var(--ink);color:#fff;padding:18px 18px 16px;display:grid;gap:12px}
-.offer .row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
-.offer .tag{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:var(--red);border-radius:999px;padding:4px 9px;align-self:center}
-.offer s{color:#7A7A7A;font-size:16px}
-.offer strong{font-size:clamp(34px,9vw,44px);font-weight:800;letter-spacing:-.03em;line-height:1}
-.offer .kz{color:#B5B5B5;font-size:13px;font-weight:600}
-.timer{display:flex;align-items:center;gap:4px;font-size:12px;white-space:nowrap;color:#C9C9C9;font-weight:600;flex-wrap:nowrap}
-.timer b{display:inline-block;min-width:28px;text-align:center;background:#262626;border-radius:7px;padding:4px 4px;font-size:14px;color:#fff;font-variant-numeric:tabular-nums}
-.timer .over{color:#E6E6E6;white-space:normal}
-.btns{display:grid;gap:8px}
-@media (min-width:420px){.btns{grid-template-columns:1fr 1fr}}
-.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;transition:transform .2s var(--ease),background .2s}
-.btn:active{transform:scale(.98)}
-.btn-tg{background:var(--red);color:#fff}
-.btn-tg:hover{background:#CC2F2C}
-.btn-wa{background:#fff;color:var(--ink)}
-.btn-wa:hover{background:#EDEDED}
-.btn svg{flex:0 0 18px}
-.after{font-size:12.5px;color:#B5B5B5;line-height:1.45}
-.after b{color:#fff;font-weight:600}
-.payback{font-family:var(--hand);font-size:24px;color:var(--red);transform:rotate(-2deg);justify-self:start;line-height:1}
-
-/* видео */
+/* блок 2: остальное + видео */
+.two{display:grid;gap:16px}
+@media (min-width:860px){.two{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.covers{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 8px;scrollbar-width:none;scroll-snap-type:x proximity}
+.covers::-webkit-scrollbar{display:none}
+.cov{flex:0 0 88px;scroll-snap-align:start;border:0;padding:0;background:none;text-align:left;cursor:zoom-in;display:grid;gap:5px}
+.cov .im{position:relative;aspect-ratio:1/1.414;border-radius:7px;overflow:hidden;background:#fff;box-shadow:0 1px 0 var(--line),0 8px 18px rgba(0,0,0,.10)}
+.cov img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.cov b{font-size:11.5px;line-height:1.2;font-weight:700}
+.cov small{font-size:10.5px;color:var(--mute);font-weight:600}
+.cov.sheet{cursor:default}
+.cov.sheet .im::before{content:"";position:absolute;left:0;right:0;top:0;height:15%;background:#1E8E3E}
+.cov.sheet .im::after{content:"";position:absolute;inset:15% 0 0 0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:100% 10%,25% 100%}
+.more{font-size:13px;color:var(--ink-2);margin-top:6px}
 .video{display:block;position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:var(--ink);text-decoration:none;color:#fff}
 .video img{position:absolute;right:-2%;bottom:0;height:118%;width:auto;max-width:none;-webkit-mask-image:linear-gradient(#000 75%,transparent);mask-image:linear-gradient(#000 75%,transparent);transition:transform .6s var(--ease)}
 .video:hover img{transform:scale(1.03)}
@@ -110,32 +117,40 @@ h1 em{font-style:normal;color:var(--red)}
 .vframe{aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:#000}
 .vframe iframe{display:block;width:100%;height:100%;border:0}
 
-/* что внутри */
-.inside h2{font-size:17px;font-weight:800;letter-spacing:-.01em;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.inside h2 span{font-size:12.5px;color:var(--mute);font-weight:600}
-.covers{display:flex;gap:10px;overflow-x:auto;padding:10px 2px 6px;scrollbar-width:none;scroll-snap-type:x proximity}
-.covers::-webkit-scrollbar{display:none}
-.cov{flex:0 0 96px;scroll-snap-align:start;border:0;padding:0;background:none;text-align:left;cursor:zoom-in;display:grid;gap:5px}
-.cov .im{position:relative;aspect-ratio:1/1.414;border-radius:7px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 8px 18px rgba(0,0,0,.12);transition:transform .3s var(--ease)}
-.cov:hover .im{transform:translateY(-3px)}
-.cov img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
-.cov .bn{position:absolute;top:5px;left:5px;font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--red);border-radius:5px;padding:2px 5px}
-.cov b{font-size:11.5px;line-height:1.2;font-weight:700}
-.cov small{font-size:10.5px;color:var(--mute);font-weight:600}
-.more{font-size:13px;color:var(--ink-2);line-height:1.45}
-.more b{color:var(--ink)}
-
-/* вопросы */
-.faq details{border-top:1px solid var(--line)}
-.faq details:last-child{border-bottom:1px solid var(--line)}
+/* блок 3: оплата */
+.pay{display:grid;gap:18px}
+@media (min-width:860px){.pay{grid-template-columns:1.05fr .95fr;gap:36px;align-items:start}}
+.offer{display:grid;gap:12px}
+.offer .what{font-size:15px;font-weight:700;line-height:1.35}
+.offer .what span{color:#B5B5B5;font-weight:500}
+.offer .row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.tag{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:var(--red);color:#fff;border-radius:999px;padding:4px 9px;align-self:center}
+.offer s{color:#7A7A7A;font-size:17px}
+.offer strong{font-size:clamp(40px,11vw,54px);font-weight:800;letter-spacing:-.03em;line-height:1}
+.offer .kz{color:#B5B5B5;font-size:14px;font-weight:600}
+.timer{display:flex;align-items:center;gap:4px;font-size:12.5px;color:#C9C9C9;font-weight:600;white-space:nowrap}
+.timer b{display:inline-block;min-width:30px;text-align:center;background:#262626;border-radius:7px;padding:4px;font-size:15px;color:#fff;font-variant-numeric:tabular-nums}
+.timer .over{color:#E6E6E6;white-space:normal}
+.btns{display:grid;gap:8px}
+@media (min-width:420px){.btns{grid-template-columns:1fr 1fr}}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;transition:transform .2s var(--ease),background .2s}
+.btn:active{transform:scale(.98)}
+.btn-tg{background:var(--red);color:#fff}
+.btn-tg:hover{background:#CC2F2C}
+.btn-wa{background:#fff;color:var(--ink)}
+.btn-wa:hover{background:#EDEDED}
+.after{font-size:13px;color:#B5B5B5;line-height:1.45}
+.after b{color:#fff;font-weight:600}
+.payback{font-family:var(--hand);font-size:24px;color:var(--red);transform:rotate(-2deg);justify-self:start;line-height:1}
+.faq details{border-top:1px solid #2E2E2E}
+.faq details:last-child{border-bottom:1px solid #2E2E2E}
 .faq summary{list-style:none;cursor:pointer;padding:12px 32px 12px 0;font-weight:700;position:relative;font-size:14px}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";position:absolute;right:2px;top:7px;font-weight:500;font-size:22px;color:var(--red);transition:transform .3s var(--ease)}
 .faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{padding:0 0 12px;font-size:14px;color:var(--ink-2)}
-
-.foot{padding-block:14px 96px;font-size:11.5px;color:var(--mute);display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--line)}
-@media (min-width:960px){.foot{padding-bottom:24px}}
+.faq details p{padding:0 0 12px;font-size:14px;color:#C9C9C9}
+.foot{padding-block:16px 92px;font-size:11.5px;color:#7A7A7A;display:flex;justify-content:space-between;gap:10px;border-top:1px solid #2E2E2E;margin-top:22px}
+@media (min-width:860px){.foot{padding-bottom:16px}}
 
 /* нижняя кнопка на телефоне */
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));transform:translateY(120%);transition:transform .35s var(--ease)}
@@ -144,7 +159,7 @@ h1 em{font-style:normal;color:var(--red)}
 .dock p{flex:1;min-width:0;font-size:15px;font-weight:800;line-height:1.15}
 .dock p span{display:block;font-size:11px;font-weight:500;color:#B5B5B5}
 .dock .btn{min-height:42px;padding:0 18px;font-size:14px}
-@media (min-width:960px){.dock{display:none}}
+@media (min-width:860px){.dock{display:none}}
 
 /* просмотр страниц */
 .lb{position:fixed;inset:0;z-index:60;background:rgba(10,10,10,.93);display:grid;place-items:center;padding:calc(56px + env(safe-area-inset-top,0px)) 14px calc(70px + env(safe-area-inset-bottom,0px));animation:fadeIn .25s}
@@ -153,13 +168,13 @@ h1 em{font-style:normal;color:var(--red)}
 .lb .lx{top:calc(12px + env(safe-area-inset-top,0px));right:14px}
 .lb .lp{left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 .lb .ln{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
-.lb .lc{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(26px + env(safe-area-inset-bottom,0px));color:#C9C9C9;font-size:13px;font-weight:600;text-align:center}
+.lb .lc{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(26px + env(safe-area-inset-bottom,0px));color:#C9C9C9;font-size:13px;font-weight:600;text-align:center;white-space:nowrap}
 
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.col > *{animation:up .6s var(--ease) both}
-.col > *:nth-child(2){animation-delay:.05s}.col > *:nth-child(3){animation-delay:.1s}.col > *:nth-child(4){animation-delay:.15s}.col > *:nth-child(5){animation-delay:.2s}.col > *:nth-child(6){animation-delay:.25s}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero > *{animation:up .6s var(--ease) both}
+.hero > *:nth-child(2){animation-delay:.05s}.hero > *:nth-child(3){animation-delay:.1s}.hero > *:nth-child(4){animation-delay:.15s}.hero > *:nth-child(5){animation-delay:.2s}.hero > *:nth-child(6){animation-delay:.25s}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
@@ -167,71 +182,114 @@ h1 em{font-style:normal;color:var(--red)}
 <div class="wrap">
   <header class="top">
     <span class="logo">SMILE SALES <i>AGENCY</i></span>
-    <a class="tg" href="https://t.me/thedmkr" target="_blank" rel="noopener">@thedmkr</a>
+    <a href="#buy">5 000 ₽ <b>Купить</b></a>
   </header>
+</div>
 
-  <main class="grid">
-    <!-- ОФФЕР -->
-    <div class="col">
-      <p class="eyebrow">Для собственников и РОП стоматологий</p>
-      <h1>Больше пациентов на&nbsp;имплантацию <em>из&nbsp;тех же заявок</em></h1>
-      <p class="lead">Пошаговая система для администраторов и менеджеров: что делать с каждой заявкой от первого сообщения до оплаты лечения. Внедрение за 1–2 недели силами вашей команды.</p>
-      <div class="author">
-        <img src="img/author.webp" alt="Дмитрий Крюков" width="600" height="760">
-        <div><b>Дмитрий Крюков, коммерческий директор</b><span>9+ лет в стоматологии · 70+ построенных КЦ · 60+ кресел в управлении</span></div>
-      </div>
-      <div class="kpis" aria-label="Показатели отделов продаж, работающих по схеме">
-        <div class="kpi"><strong>1 <em>мин</em></strong><span>первый ответ на заявку</span></div>
-        <div class="kpi"><strong>78%</strong><span>заявок доходят до консультации</span></div>
-        <div class="kpi"><strong>90%</strong><span>записанных приходят</span></div>
-        <div class="kpi"><strong>80%</strong><span>консультаций в лечение</span></div>
-      </div>
-      <div class="offer" id="buy">
-        <div class="row"><span class="tag">Акция до 26.10</span><s>17 000 ₽</s><strong>7 000 ₽</strong><span class="kz">или 38 000 ₸</span></div>
-        <p class="timer" id="timer">Осталось: <b id="tD">00</b>д <b id="tH">00</b>ч <b id="tM">00</b>м <b id="tS">00</b>с</p>
-        <div class="btns">
-          <a class="btn btn-tg" href="https://t.me/thedmkr" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.4 4.6 2.9 11.7c-1.3.5-1.3 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.4-1.5zM8.6 14.4l9.7-6.1c.5-.3.9-.1.5.2l-8.2 7.4-.3 3.4z"/></svg>Купить в Telegram</a>
-          <a class="btn btn-wa" href="https://wa.me/77066969446?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B0%D0%BF%D0%BA%D1%83%20%C2%AB%D0%A1%D1%85%D0%B5%D0%BC%D0%B0%20%D0%B4%D0%BE%D0%B6%D0%B8%D0%BC%D0%B0%C2%BB%20%D0%B7%D0%B0%207%20000%20%E2%82%BD" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#22C55E" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>Написать в WhatsApp</a>
-        </div>
-        <p class="after"><b>После оплаты</b> присылаем ссылку на папку на Google Drive и отвечаем на вопросы по внедрению в Telegram.</p>
-      </div>
-      <p class="payback">окупается первым же пациентом на имплантацию</p>
+<!-- 1. ДВА ГЛАВНЫХ ПРОДУКТА -->
+<section class="blk">
+  <div class="wrap hero">
+    <p class="eyebrow">Для собственников и РОП стоматологий</p>
+    <h1>Схема дожима <em>+ регламент куратора</em></h1>
+    <p class="lead">Как довести заявку на имплантацию до оплаты лечения: менеджер ведёт пациента до консультации, куратор — до подписанного плана. Внедрение за 1–2 недели.</p>
+    <div class="author">
+      <img src="img/author.webp" alt="Дмитрий Крюков" width="600" height="760">
+      <div><b>Дмитрий Крюков, коммерческий директор</b><span>9+ лет в стоматологии · 70+ построенных КЦ · 60+ кресел в управлении</span></div>
     </div>
+    <div class="duo">
+      <article class="prod">
+        <button class="cv" type="button" data-g="s01" data-n="16" data-t="Схема дожима"><span><img src="img/covers/01.webp" alt="Обложка: Схема дожима пациентов" width="340" height="481"></span><small>листать ›</small></button>
+        <div>
+          <h2>Схема дожима пациентов</h2>
+          <p class="vol">48 стр. + шпаргалка на смену</p>
+          <ul>
+            <li><b>Что ответить на любую заявку:</b> 4 типа запроса, 8 фактов до цены</li>
+            <li>Цена в рамке, возражения, запись в ближайшие 48 часов</li>
+            <li>Маршрут для каждого «молчуна» и дожим 90 дней</li>
+          </ul>
+        </div>
+      </article>
+      <article class="prod cur">
+        <button class="cv" type="button" data-g="s07" data-n="16" data-t="Регламент куратора"><span><img src="img/covers/07.webp" alt="Обложка: Куратор в стоматологии" width="340" height="481"></span><small>листать ›</small></button>
+        <div>
+          <h2>Регламент куратора в стоматологии</h2>
+          <p class="vol">78 стр. + рабочая книга куратора 37 стр.</p>
+          <ul>
+            <li><b>Как найти и нанять куратора:</b> вакансия, кейс-тест, первые 14 дней</li>
+            <li>Как он ведёт пациента от консультации до оплаты плана</li>
+            <li>Нормативы, мотивация, CRM-таблица, шаблон плана лечения</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="kpis" aria-label="Показатели отделов продаж, работающих по схеме">
+      <div class="kpi"><strong>1 <em>мин</em></strong><span>первый ответ на заявку</span></div>
+      <div class="kpi"><strong>78%</strong><span>заявок доходят до консультации</span></div>
+      <div class="kpi"><strong>90%</strong><span>записанных приходят</span></div>
+      <div class="kpi"><strong>80%</strong><span>консультаций в лечение</span></div>
+    </div>
+    <a class="jump" href="#buy">Получить за 5 000 ₽ <s>17 000 ₽</s></a>
+  </div>
+</section>
 
-    <!-- ДОКАЗАТЕЛЬСТВА -->
-    <div class="col">
+<!-- 2. ОСТАЛЬНОЕ + ВИДЕО -->
+<section class="blk cloud">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow">Ещё в папке</p>
+      <h2 class="h2">Всё для команды: 18 файлов, 350+ страниц</h2>
+      <div class="covers">
+        <button class="cov" type="button" data-g="cheat" data-t="Шпаргалка менеджера"><span class="im"><img src="img/covers/cheat.webp" alt="Шпаргалка менеджера" width="340" height="481" loading="lazy"></span><b>Шпаргалка менеджера</b><small>2 стр.</small></button>
+        <button class="cov" type="button" data-g="s02" data-n="12" data-t="Работа с возражениями"><span class="im"><img src="img/covers/02.webp" alt="Работа с возражениями" width="340" height="481" loading="lazy"></span><b>Возражения</b><small>26 стр.</small></button>
+        <button class="cov" type="button" data-g="s06" data-n="16" data-t="Адаптация сотрудника"><span class="im"><img src="img/covers/06.webp" alt="Адаптация сотрудника" width="340" height="481" loading="lazy"></span><b>Адаптация новичка</b><small>123 стр.</small></button>
+        <button class="cov" type="button" data-g="rop" data-t="Задачи ролей"><span class="im"><img src="img/covers/rop.webp" alt="Задачи ролей" width="340" height="481" loading="lazy"></span><b>Задачи 5 ролей</b><small>КЦ, админ, РОП…</small></button>
+        <button class="cov" type="button" data-g="s08" data-n="12" data-t="Рабочая книга куратора"><span class="im"><img src="img/covers/08.webp" alt="Рабочая книга куратора" width="340" height="481" loading="lazy"></span><b>Книга куратора</b><small>37 стр.</small></button>
+        <div class="cov sheet"><span class="im"></span><b>Шаблоны РНП</b><small>2 таблицы</small></div>
+        <div class="cov sheet"><span class="im"></span><b>Аудит ОП</b><small>чек-лист</small></div>
+      </div>
+      <p class="more">+ майнд-карта схемы, ТЗ на кейсы «до и после» и видео врачей.</p>
+    </div>
+    <div>
       <a class="video" id="videoCard" href="https://www.youtube.com/watch?v=euF8fXQFIlA" target="_blank" rel="noopener">
-        <img src="img/hero-rop.webp" alt="" width="720" height="778">
+        <img src="img/hero-rop.webp" alt="" width="720" height="778" loading="lazy">
         <span class="vt"><small>Обзор · YouTube</small><b>Как устроена схема дожима</b></span>
         <span class="play"><i></i>Смотреть видео</span>
       </a>
-      <div class="inside">
-        <h2>Что внутри <span>18 файлов · 350+ страниц</span></h2>
-        <div class="covers">
-          <button class="cov" type="button" data-g="s01" data-n="16" data-t="Схема дожима"><span class="im"><img src="img/covers/01.webp" alt="Обложка: Схема дожима" width="340" height="481"></span><b>Схема дожима</b><small>48 стр.</small></button>
-          <button class="cov" type="button" data-g="cheat" data-t="Шпаргалка менеджера"><span class="im"><img src="img/covers/cheat.webp" alt="Шпаргалка менеджера" width="340" height="481"></span><b>Шпаргалка на смену</b><small>2 стр.</small></button>
-          <button class="cov" type="button" data-g="s02" data-n="12" data-t="Работа с возражениями"><span class="im"><img src="img/covers/02.webp" alt="Обложка: Работа с возражениями" width="340" height="481"></span><b>Возражения</b><small>26 стр.</small></button>
-          <button class="cov" type="button" data-g="s06" data-n="16" data-t="Адаптация сотрудника"><span class="im"><img src="img/covers/06.webp" alt="Обложка: Адаптация сотрудника" width="340" height="481"></span><b>Адаптация новичка</b><small>123 стр.</small></button>
-          <button class="cov" type="button" data-g="s07" data-n="16" data-t="Куратор в стоматологии · бонус"><span class="im"><img src="img/covers/07.webp" alt="Обложка: Куратор в стоматологии" width="340" height="481"><span class="bn">Бонус</span></span><b>Куратор</b><small>78 стр.</small></button>
-          <button class="cov" type="button" data-g="s08" data-n="12" data-t="Рабочая книга куратора · бонус"><span class="im"><img src="img/covers/08.webp" alt="Обложка: Рабочая книга куратора" width="340" height="481"><span class="bn">Бонус</span></span><b>Книга куратора</b><small>37 стр.</small></button>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ОПЛАТА -->
+<section class="blk dark" id="buy">
+  <div class="wrap">
+    <div class="pay">
+      <div class="offer">
+        <p class="what">Схема дожима + регламент куратора <span>и ещё 15 файлов для отдела продаж</span></p>
+        <div class="row"><span class="tag">Акция до 26.10</span><s>17 000 ₽</s></div>
+        <div class="row"><strong>5 000 ₽</strong><span class="kz">или 27 000 ₸</span></div>
+        <p class="timer" id="timer">Осталось: <b id="tD">00</b>д <b id="tH">00</b>ч <b id="tM">00</b>м <b id="tS">00</b>с</p>
+        <div class="btns">
+          <a class="btn btn-tg" href="https://t.me/thedmkr" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.4 4.6 2.9 11.7c-1.3.5-1.3 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.4-1.5zM8.6 14.4l9.7-6.1c.5-.3.9-.1.5.2l-8.2 7.4-.3 3.4z"/></svg>Купить в Telegram</a>
+          <a class="btn btn-wa" href="https://wa.me/77066969446?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D1%81%D1%85%D0%B5%D0%BC%D1%83%20%D0%B4%D0%BE%D0%B6%D0%B8%D0%BC%D0%B0%20%D0%B8%20%D1%80%D0%B5%D0%B3%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%20%D0%BA%D1%83%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0%20%D0%B7%D0%B0%205%20000%20%E2%82%BD" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#22C55E" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>Написать в WhatsApp</a>
         </div>
-        <p class="more">+ майнд-карта, <b>задачи 5 ролей</b>, шаблоны РНП, <b>чек-лист аудита отдела продаж</b>, ТЗ на кейсы и видео врачей. Нажмите на обложку, чтобы полистать.</p>
+        <p class="after"><b>После оплаты</b> присылаем ссылку на папку на Google Drive и отвечаем на вопросы по внедрению в Telegram.</p>
+        <p class="payback">окупается первым же пациентом на имплантацию</p>
       </div>
       <div class="faq">
-        <details><summary>Это готовые скрипты?</summary><p>Нет, это порядок действий и правила на каждом шаге: менеджер понимает логику и сам подбирает слова. Поэтому пациент не слышит шаблонов.</p></details>
-        <details><summary>Подойдёт, если у нас нет колл-центра?</summary><p>Да. Есть сценарий без куратора и КЦ: заявки и пациентов после консультации ведёт администратор. Работает для любого направления, не только имплантации.</p></details>
+        <details><summary>Это готовые скрипты?</summary><p>Нет, это порядок действий и правила на каждом шаге: менеджер и куратор понимают логику и сами подбирают слова. Пациент не слышит шаблонов.</p></details>
+        <details><summary>У нас нет куратора. Регламент поможет?</summary><p>Да. В нём расписано, как найти или вырастить куратора из своей команды, как провести первые 14 дней и по каким цифрам его контролировать.</p></details>
+        <details><summary>Подойдёт, если у нас нет колл-центра?</summary><p>Да. Есть сценарий, где заявки и пациентов ведёт администратор. Работает для любого направления, не только имплантации.</p></details>
         <details><summary>Кто будет внедрять?</summary><p>Руководитель или РОП. В папке расписано по дням, кто что делает. Внешние подрядчики не нужны.</p></details>
       </div>
     </div>
-  </main>
-
-  <footer class="foot"><span>smile sales agency · авторские материалы</span><span>+7 706 696 94 46</span></footer>
-</div>
+    <footer class="foot"><span>smile sales agency · Дмитрий Крюков</span><span>+7 706 696 94 46</span></footer>
+  </div>
+</section>
 
 <div class="dock" id="dock" aria-hidden="true">
   <div class="in">
-    <p>7 000 ₽<span>акция до 26 октября</span></p>
-    <a class="btn btn-tg" href="https://t.me/thedmkr" target="_blank" rel="noopener" tabindex="-1">Купить</a>
+    <p>5 000 ₽<span>акция до 26 октября</span></p>
+    <a class="btn btn-tg" href="#buy" tabindex="-1">Купить</a>
   </div>
 </div>
 
@@ -274,7 +332,7 @@ h1 em{font-style:normal;color:var(--red)}
   var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbC=document.getElementById('lbC'),list=[],cur=0,title='';
   function show(){lbImg.src=list[cur];lbImg.alt=title+', страница '+(cur+1);lbC.textContent=title+' · '+(cur+1)+' / '+list.length}
   function step(d){cur=(cur+d+list.length)%list.length;show()}
-  [].forEach.call(document.querySelectorAll('.cov'),function(c){
+  [].forEach.call(document.querySelectorAll('button.cov, .prod .cv'),function(c){
     c.addEventListener('click',function(){
       var g=c.dataset.g,n=+c.dataset.n||0;title=c.dataset.t;list=[];
       if(n){for(var i=1;i<=n;i++)list.push('img/pages/'+g+'-'+pad(i)+'.webp')}else{list.push(c.querySelector('img').src)}
@@ -287,10 +345,10 @@ h1 em{font-style:normal;color:var(--red)}
   lb.addEventListener('click',function(e){if(e.target===lb)lb.hidden=true});
   document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
 
-  /* нижняя кнопка на телефоне: когда блок с ценой ушёл с экрана */
+  /* нижняя кнопка на телефоне: пока блок оплаты не на экране */
   var dock=document.getElementById('dock'),buy=document.getElementById('buy');
   function onScroll(){
-    var r=buy.getBoundingClientRect(),show=r.bottom<0||r.top>window.innerHeight;
+    var show=buy.getBoundingClientRect().top>window.innerHeight*0.85&&window.scrollY>120;
     dock.classList.toggle('show',show);dock.setAttribute('aria-hidden',show?'false':'true');dock.querySelector('a').tabIndex=show?0:-1;
   }
   window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);onScroll();
