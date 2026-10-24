@@ -55,6 +55,8 @@ h1,h2,h3{text-wrap:balance}
 .logo{font-weight:800;font-size:12.5px;letter-spacing:.04em;white-space:nowrap}
 .logo i{font-style:normal;color:var(--red)}
 .top a{font-size:13px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.top .np{white-space:nowrap}
+@media (max-width:360px){.top .np{display:none}.logo{font-size:11.5px}}
 .top a b{background:var(--red);color:#fff;border-radius:999px;padding:6px 12px;font-size:12.5px}
 
 /* блок 1: два продукта */
@@ -91,8 +93,10 @@ h1 em{font-style:normal;color:var(--red)}
 @media (min-width:760px){.jump{justify-self:start;padding:0 28px}}
 
 /* блок 2: остальное + видео */
-.two{display:grid;gap:16px}
-@media (min-width:860px){.two{grid-template-columns:1fr 1fr;gap:28px;align-items:start}}
+.two{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.two > *,.pay > *,.duo > *,.hero > *{min-width:0}
+.covers{max-width:100%}
+@media (min-width:860px){.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}}
 .covers{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 8px;scrollbar-width:none;scroll-snap-type:x proximity}
 .covers::-webkit-scrollbar{display:none}
 .cov{flex:0 0 88px;scroll-snap-align:start;border:0;padding:0;background:none;text-align:left;cursor:zoom-in;display:grid;gap:5px}
@@ -118,8 +122,8 @@ h1 em{font-style:normal;color:var(--red)}
 .vframe iframe{display:block;width:100%;height:100%;border:0}
 
 /* блок 3: оплата */
-.pay{display:grid;gap:18px}
-@media (min-width:860px){.pay{grid-template-columns:1.05fr .95fr;gap:36px;align-items:start}}
+.pay{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+@media (min-width:860px){.pay{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:36px;align-items:start}}
 .offer{display:grid;gap:12px}
 .offer .what{font-size:15px;font-weight:700;line-height:1.35}
 .offer .what span{color:#B5B5B5;font-weight:500}
@@ -182,7 +186,7 @@ h1 em{font-style:normal;color:var(--red)}
 <div class="wrap">
   <header class="top">
     <span class="logo">SMILE SALES <i>AGENCY</i></span>
-    <a href="#buy">7 990 ₽ <b>Купить</b></a>
+    <a href="#buy"><span class="np">7 990 ₽</span> <b>Купить</b></a>
   </header>
 </div>
 
