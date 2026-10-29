@@ -195,6 +195,32 @@ h1,h2,h3{text-wrap:balance}
 .lb .lc{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(26px + env(safe-area-inset-bottom,0px));color:#C9C9C9;font-size:13px;font-weight:600;text-align:center;white-space:nowrap}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* БОНУСЫ */
+.bsum{display:flex;flex-wrap:wrap;gap:6px;margin:-4px 0 16px}
+.bsum span{font-size:12.5px;font-weight:700;border-radius:999px;padding:6px 11px;background:var(--paper);border:1px solid var(--line)}
+.bsum span b{color:var(--red)}
+.bgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+@media (min-width:760px){.bgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.bn{border:0;margin:0;font:inherit;color:inherit;text-align:left;cursor:zoom-in;display:grid;grid-template-columns:70px minmax(0,1fr);gap:14px;align-items:center;background:var(--paper);border-radius:16px;padding:12px 14px 12px 12px;box-shadow:0 1px 0 var(--line);transition:transform .25s var(--ease),box-shadow .25s}
+.bn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.08)}
+.bn .im{position:relative;display:block;width:70px;aspect-ratio:1/1.414;border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 1px 0 var(--line),0 6px 14px rgba(0,0,0,.12)}
+.bn .im img{display:block;width:100%;height:100%;object-fit:contain;object-position:top}
+.bn .im.stack{box-shadow:4px 4px 0 -1px #fff,4px 4px 0 0 var(--line),8px 8px 0 -1px #fff,8px 8px 0 0 var(--line),0 6px 14px rgba(0,0,0,.12);overflow:visible}
+.bn .im.stack img{border-radius:6px}
+.bn .im.sheet::before{content:"";position:absolute;left:0;right:0;top:0;height:16%;background:#1E8E3E}
+.bn .im.sheet::after{content:"";position:absolute;inset:16% 0 0 0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:100% 10%,25% 100%}
+.bn .im.sheet i{position:absolute;z-index:1;left:8px;right:8px;bottom:10%;height:32%;display:flex;align-items:flex-end;gap:5px}
+.bn .im.sheet i b{flex:1;background:var(--red);border-radius:2px 2px 0 0}
+.bn .im.sheet i b:nth-child(1){height:40%}.bn .im.sheet i b:nth-child(2){height:70%;background:var(--ink)}.bn .im.sheet i b:nth-child(3){height:100%}
+.bn .lbl{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.bn .lbl em{font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.bn .lbl u{text-decoration:none;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--red);border-radius:5px;padding:2px 6px}
+.bn h3{font-size:15px;font-weight:800;line-height:1.25;margin-top:3px}
+.bn p{font-size:13px;color:var(--ink-2);line-height:1.4;margin-top:3px}
+.bn small{display:block;font-size:11.5px;color:var(--mute);font-weight:600;margin-top:4px}
+.bfoot{margin-top:14px;font-size:13.5px;color:var(--ink-2)}
+.bfoot a{font-weight:700;color:var(--ink)}
 </style>
 </head>
 <body>
@@ -210,7 +236,7 @@ h1,h2,h3{text-wrap:balance}
 <section class="wrap hero">
   <p class="eyebrow">Для собственников стоматологий</p>
   <h1>Пациент получил план лечения и ушёл «подумать»? <em>Эти деньги возвращает куратор.</em></h1>
-  <p class="lead">Регламент куратора и схема дожима: готовая система, которая ведёт пациента от заявки до оплаченного плана. Внедрение за 1–2 недели вашей командой.</p>
+  <p class="lead">Регламент куратора и схема дожима + 9 бонусов: готовая система, которая ведёт пациента от заявки до оплаченного плана. Внедрение за 1–2 недели вашей командой.</p>
   <div class="author">
     <img src="img/author.webp" alt="Дмитрий Крюков" width="600" height="760">
     <div><b>Дмитрий Крюков, коммерческий директор</b><span>9+ лет в стоматологии · 70+ построенных КЦ · 60+ кресел в управлении</span></div>
@@ -286,7 +312,28 @@ h1,h2,h3{text-wrap:balance}
       <div class="kpi"><strong>90%</strong><span>записанных приходят</span></div>
       <div class="kpi"><strong>80%</strong><span>консультаций в лечение</span></div>
     </div>
-    <p class="also"><b>Ещё в папке:</b> работа с возражениями, адаптация новичка на 123 стр., задачи 5 ролей, шаблоны РНП, чек-лист аудита отдела продаж. Всего 18 файлов, 350+ страниц. <a href="https://www.youtube.com/watch?v=euF8fXQFIlA" target="_blank" rel="noopener">Видео-обзор ›</a></p>
+    
+  </div>
+</section>
+
+<!-- БОНУСЫ -->
+<section class="blk" id="bonus">
+  <div class="wrap">
+    <p class="eyebrow">И это не всё</p>
+    <h2 class="h2">+ 9 бонусов в той же папке</h2>
+    <div class="bsum"><span><b>19</b> файлов</span><span><b>370+</b> страниц</span><span><b>3</b> таблицы с автоподсчётом</span></div>
+    <div class="bgrid">
+      <button class="bn" type="button" data-list="img/pages/kc-01.webp,img/pages/kc-02.webp" data-t="Шпаргалка КЦ: квалификация лида"><span class="im"><img src="img/covers/kc.webp" alt="Шпаргалка КЦ: квалификация лида" width="340" height="240" loading="lazy"></span><span><span class="lbl"><em>Бонус 1</em><u>Новое</u></span><h3>Шпаргалка КЦ: квалификация лида</h3><p>КВАЛ или НЕКВАЛ по 4 условиям: менеджер не тратит время на пустые заявки.</p><small>2 стр.</small></span></button>
+      <button class="bn" type="button" data-list="img/covers/cheat.webp" data-t="Шпаргалка менеджера"><span class="im"><img src="img/covers/cheat.webp" alt="Шпаргалка менеджера" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 2</em></span><h3>Шпаргалка менеджера на смену</h3><p>Вся схема и карта возражений на двух листах у монитора.</p><small>2 стр.</small></span></button>
+      <button class="bn" type="button" data-g="s02" data-n="12" data-t="Работа с возражениями"><span class="im"><img src="img/covers/02.webp" alt="Работа с возражениями" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 3</em></span><h3>Работа с возражениями</h3><p>Скрытые возражения, перехват ушедшего пациента, разбор диалогов.</p><small>26 стр.</small></span></button>
+      <button class="bn" type="button" data-g="s06" data-n="16" data-t="Адаптация сотрудника с нуля"><span class="im"><img src="img/covers/06.webp" alt="Адаптация сотрудника клиники с нуля" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 4</em></span><h3>Адаптация сотрудника с нуля</h3><p>Зубы и услуги простыми словами, цены, визит, CRM, касса и план первого месяца.</p><small>123 стр.</small></span></button>
+      <button class="bn" type="button" data-list="img/covers/r_kc.webp,img/covers/r_adm.webp,img/covers/r_cur.webp,img/covers/r_rop.webp,img/covers/r_okk.webp" data-t="Задачи и нормы ролей"><span class="im stack"><img src="img/covers/r_kc.webp" alt="Задачи отдела продаж по ролям" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 5</em></span><h3>Задачи и нормы 5 ролей</h3><p>Менеджер КЦ, администратор, куратор, РОП, ОКК: обязанности, нормативы, приоритеты.</p><small>5 PDF · 42 стр.</small></span></button>
+      <button class="bn" type="button" data-list="" data-t="Чек-лист аудита отдела продаж" tabindex="-1" style="cursor:default"><span class="im sheet"><i><b></b><b></b><b></b></i></span><span><span class="lbl"><em>Бонус 6</em><u>Обновлено</u></span><h3>Чек-лист аудита отдела продаж</h3><p>397 пунктов в 25 блоках. Отмечаете «да / нет», процент готовности отдела считается сам.</p><small>Excel</small></span></button>
+      <button class="bn" type="button" data-list="" data-t="Шаблоны РНП" tabindex="-1" style="cursor:default"><span class="im sheet"><i><b></b><b></b><b></b></i></span><span><span class="lbl"><em>Бонус 7</em></span><h3>Шаблоны РНП</h3><p>Реклама → заявки → записи → оплаты по дням, журнал лидов по менеджерам, нормы подсвечиваются.</p><small>2 Google-таблицы</small></span></button>
+      <button class="bn" type="button" data-list="img/covers/03.webp" data-t="Майнд-карта схемы"><span class="im"><img src="img/covers/03.webp" alt="Майнд-карта схемы дожима" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 8</em></span><h3>Майнд-карта схемы</h3><p>Вся схема на одном листе A3: распечатать и повесить в КЦ.</p><small>PNG, A3</small></span></button>
+      <button class="bn" type="button" data-list="img/covers/04.webp,img/covers/05.webp" data-t="ТЗ для маркетолога"><span class="im stack"><img src="img/covers/04.webp" alt="ТЗ: кейсы до и после" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 9</em></span><h3>ТЗ: кейсы «до и после» и видео врачей</h3><p>Что снять маркетологу, чтобы пациент поверил до визита.</p><small>2 ТЗ</small></span></button>
+    </div>
+    <p class="bfoot">+ инструкция «Как пользоваться папкой»: кому что читать и с чего начать. <a href="https://www.youtube.com/watch?v=euF8fXQFIlA" target="_blank" rel="noopener">Видео-обзор ›</a></p>
   </div>
 </section>
 
@@ -294,7 +341,7 @@ h1,h2,h3{text-wrap:balance}
 <section class="pay" id="buy">
   <div class="wrap">
     <div class="offer">
-      <p class="what">Регламент куратора + схема дожима<span>и ещё 15 файлов для отдела продаж стоматологии</span></p>
+      <p class="what">Регламент куратора + схема дожима + 9 бонусов<span>19 файлов, 370+ страниц для отдела продаж стоматологии</span></p>
       <div class="row"><span class="tag">Акция до 1.11</span><s>24 000 ₽</s></div>
       <div class="row"><strong>7 990 ₽</strong><span class="kz">или 43 000 ₸</span></div>
       <p class="timer" id="timer">Осталось: <b id="tD">00</b>д <b id="tH">00</b>ч <b id="tM">00</b>м <b id="tS">00</b>с</p>
@@ -350,9 +397,10 @@ h1,h2,h3{text-wrap:balance}
   var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbC=document.getElementById('lbC'),list=[],cur=0,title='';
   function show(){lbImg.src=list[cur];lbImg.alt=title+', страница '+(cur+1);lbC.textContent=title+' · '+(cur+1)+' / '+list.length}
   function step(d){cur=(cur+d+list.length)%list.length;show()}
-  [].forEach.call(document.querySelectorAll('[data-g]'),function(c){
+  [].forEach.call(document.querySelectorAll('[data-g],[data-list]'),function(c){
     c.addEventListener('click',function(){
-      var g=c.dataset.g,n=+c.dataset.n;title=c.dataset.t;list=[];
+      var g=c.dataset.g,n=+c.dataset.n||0;title=c.dataset.t;list=[];
+      if(c.dataset.list!==undefined){list=c.dataset.list?c.dataset.list.split(','):[];if(!list.length)return}
       for(var i=1;i<=n;i++)list.push('img/pages/'+g+'-'+pad(i)+'.webp');
       cur=0;show();lb.hidden=false;
     });
