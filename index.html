@@ -6,7 +6,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Регламент куратора + схема дожима · Smile Sales">
 <meta property="og:description" content="Как вернуть пациентов, которые ушли «подумать» после консультации. Регламент куратора и схема дожима для стоматологии. 8 000 ₽ вместо 24 000 ₽.">
-<meta property="og:image" content="https://bmkagencykz-boop.github.io/shema-dozhima/img/og-8000b.jpg">
+<meta property="og:image" content="https://bmkagencykz-boop.github.io/shema-dozhima/img/og-8000c.jpg">
 <meta property="og:url" content="https://bmkagencykz-boop.github.io/shema-dozhima/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFFFFF">
@@ -18,16 +18,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:wght@400;500;600;700;800&display=swap">
 <style>
-/* Layout: боль → путь пациента (кто что закрывает) → куратор подробно → схема коротко → оплата. Чёрно-белый, акцент красный */
+/* Layout: боль → путь пациента (кто что закрывает) → куратор подробно → схема коротко → оплата. Белый + голубой акцент, тёмные плашки */
 :root{
-  --ink:#111111;
-  --ink-2:#4D4D4D;
-  --red:#E53935;
-  --red-soft:#FDECEC;
+  --ink:#101214;
+  --ink-2:#3A414B;
+  --red:#1677FF;
+  --red-soft:#EAF2FF;
+  --blue-d:#0E5FD6;
+  --blue-on-dark:#6EA8FF;
+  --sale:#F0443A;
   --paper:#FFFFFF;
-  --cloud:#F5F5F5;
-  --line:#E6E6E6;
-  --mute:#8C8C8C;
+  --cloud:#F4F6F9;
+  --line:#E6EAF0;
+  --mute:#6B7380;
   --body:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
   --hand:"Caveat","Segoe Print","Comic Sans MS",cursive;
   --ease:cubic-bezier(.2,.7,.2,1);
@@ -222,6 +225,39 @@ h1,h2,h3{text-wrap:balance}
 .bfoot{margin-top:14px;font-size:13.5px;color:var(--ink-2)}
 .bfoot a{font-weight:700;color:var(--ink)}
 
+
+/* ГОЛУБАЯ ТЕМА (как у лендинга Жаксыбека) */
+body{background:radial-gradient(900px 520px at 88% 0%,#E3EEFF 0%,rgba(227,238,255,0) 62%) no-repeat,var(--paper)}
+.eyebrow{display:inline-flex;align-items:center;background:var(--red-soft);border-radius:999px;padding:7px 12px;letter-spacing:.08em}
+.hero .eyebrow{justify-self:start}
+.btn-main{box-shadow:0 14px 30px rgba(22,119,255,.32)}
+.btn-main:hover{background:var(--blue-d);transform:translateY(-1px)}
+.btn-light{box-shadow:inset 0 0 0 2px var(--line)}
+.pay .btn-light{box-shadow:none}
+.top{height:60px}
+.top a b{box-shadow:0 8px 18px rgba(22,119,255,.28)}
+.path{border-radius:24px;border-color:var(--line);box-shadow:0 10px 30px rgba(16,18,20,.04)}
+.stp.cur em{background:var(--red)}
+.st{border-radius:20px;box-shadow:0 10px 30px rgba(16,18,20,.05)}
+.st i{color:var(--red)}
+.money{border-radius:22px}
+.money b em{color:var(--blue-on-dark)}
+.inside li{border-radius:18px;background:var(--cloud)}
+.kpi{border-radius:16px;background:var(--paper);box-shadow:0 8px 24px rgba(16,18,20,.05)}
+.bn{border-radius:20px;box-shadow:0 10px 30px rgba(16,18,20,.05)}
+.bn:hover{box-shadow:0 16px 36px rgba(22,119,255,.14)}
+.bsum span{border-color:var(--line)}
+.tag{background:var(--sale)}
+.offer s{text-decoration-color:var(--sale);text-decoration-thickness:2px}
+.pr s{text-decoration-color:var(--sale)}
+.pay{background:var(--ink)}
+.payback{color:var(--blue-on-dark)}
+.faq summary::after{color:var(--blue-on-dark)}
+.faq details{border-color:#262A30}
+.faq details:last-child{border-color:#262A30}
+.foot{border-color:#262A30}
+.dock .in{background:rgba(16,18,20,.94)}
+
 /* полоса «последний день» */
 .last{display:flex;justify-content:center;align-items:center;gap:4px 10px;flex-wrap:wrap;background:var(--red);color:#fff;font-size:12.5px;font-weight:600;line-height:1.3;padding:8px 16px;text-decoration:none;text-align:center}
 .last b{font-weight:800}
@@ -352,7 +388,7 @@ h1,h2,h3{text-wrap:balance}
       <div class="row"><strong>8 000 ₽</strong><span class="kz">или 43 000 ₸</span></div>
       <div class="btns">
         <a class="btn btn-main" href="https://t.me/smilesalesbot?start=landing" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.4 4.6 2.9 11.7c-1.3.5-1.3 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.4-1.5zM8.6 14.4l9.7-6.1c.5-.3.9-.1.5.2l-8.2 7.4-.3 3.4z"/></svg>Купить в Telegram-боте</a>
-        <a class="btn btn-light" data-wa="ask" href="https://wa.me/77066969446" target="_blank" rel="noopener">Задать вопрос в WhatsApp</a>
+        <a class="btn btn-light" href="https://t.me/thedmkr" target="_blank" rel="noopener">Задать вопрос</a>
       </div>
       <p class="after"><b>Как купить:</b> бот покажет реквизиты, вы оплачиваете и присылаете чек, доступ к папке приходит в тот же чат.</p>
       <p class="payback">окупается первым же оплаченным планом</p>
@@ -364,7 +400,7 @@ h1,h2,h3{text-wrap:balance}
       <details><summary>Как получить папку?</summary><p>Нажмите «Купить»: откроется Telegram-бот с реквизитами. Оплатите в рублях или тенге, пришлите чек, и бот отправит ссылку на папку на Google Drive.</p></details>
     </div>
   </div>
-  <div class="wrap"><footer class="foot"><span>smile sales agency · Дмитрий Крюков</span><span>+7 706 696 94 46</span></footer></div>
+  <div class="wrap"><footer class="foot"><span>smile sales agency · Дмитрий Крюков</span><span>Telegram @thedmkr</span></footer></div>
 </section>
 
 <div class="dock" id="dock" aria-hidden="true">
@@ -378,11 +414,6 @@ h1,h2,h3{text-wrap:balance}
 
 <script>
 (function(){
-  /* WhatsApp: готовый текст сообщения */
-  [].forEach.call(document.querySelectorAll('[data-wa]'),function(a){
-    a.href='https://wa.me/77066969446?text='+encodeURIComponent('Здравствуйте! У меня вопрос по папке «Регламент куратора + схема дожима»');
-  });
-
   /* листалка страниц */
   var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbC=document.getElementById('lbC'),list=[],cur=0,title='';
   function show(){lbImg.src=list[cur];lbImg.alt=title+', страница '+(cur+1);lbC.textContent=title+' · '+(cur+1)+' / '+list.length}
