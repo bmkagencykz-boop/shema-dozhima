@@ -258,6 +258,34 @@ body{background:radial-gradient(900px 520px at 88% 0%,#E3EEFF 0%,rgba(227,238,25
 .foot{border-color:#262A30}
 .dock .in{background:rgba(16,18,20,.94)}
 
+
+/* v18: первый экран с обложками, 3 шага покупки, косметология */
+.seg{justify-self:start;display:inline-flex;gap:4px;background:var(--cloud);border-radius:999px;padding:4px}
+.seg > *{font-size:12.5px;font-weight:700;border-radius:999px;padding:8px 14px;text-decoration:none;color:var(--ink-2);white-space:nowrap}
+.seg .on{background:#fff;color:var(--ink);box-shadow:0 4px 12px rgba(16,18,20,.08)}
+.seg i{font-style:normal;font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--red);margin-left:5px}
+.hero{grid-template-columns:minmax(0,1fr)}
+.seg{max-width:100%}
+@media (max-width:360px){.seg > *{padding:7px 10px;font-size:11.5px}.seg i{margin-left:3px}}
+.fan{position:relative;height:196px;margin:2px 0 0;border:0;padding:0;background:none;cursor:zoom-in;width:100%}
+.fan img{position:absolute;top:12px;width:116px;height:auto;border-radius:8px;box-shadow:0 18px 36px rgba(16,18,20,.22)}
+.fan img:nth-child(1){left:calc(50% - 148px);transform:rotate(-9deg)}
+.fan img:nth-child(2){left:calc(50% - 64px);top:0;width:128px;z-index:2}
+.fan img:nth-child(3){left:calc(50% + 32px);transform:rotate(8deg)}
+.fan-tag{position:absolute;z-index:3;left:50%;bottom:0;transform:translateX(-50%);white-space:nowrap;background:var(--red);color:#fff;font-size:12.5px;font-weight:800;border-radius:999px;padding:7px 14px;box-shadow:0 10px 22px rgba(22,119,255,.32)}
+.how{list-style:none;margin:0;padding:14px;display:grid;gap:10px;background:var(--cloud);border-radius:20px}
+@media (min-width:760px){.how{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.how li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:center;font-size:13.5px;color:var(--ink-2);line-height:1.35}
+.how li b{width:28px;height:28px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:13px}
+.bgrid.cut .bn:nth-child(n+5){display:none}
+.more{margin-top:10px;width:100%;min-height:48px;border:0;border-radius:999px;background:var(--paper);box-shadow:inset 0 0 0 2px var(--line);font-weight:800;font-size:14px;cursor:pointer;color:var(--ink)}
+.cosmo{border-radius:24px;padding:22px 18px;background:linear-gradient(135deg,#EAF2FF 0%,#F7FAFF 100%);display:grid;gap:10px;justify-items:start}
+.cosmo .eyebrow{background:#fff}
+.cosmo .h2{margin:0}
+.cosmo p{font-size:14.5px;color:var(--ink-2);max-width:34em}
+.cosmo p b{color:var(--ink)}
+.cosmo small{font-size:12.5px;color:var(--mute)}
+
 /* полоса «последний день» */
 .last{display:flex;justify-content:center;align-items:center;gap:4px 10px;flex-wrap:wrap;background:var(--red);color:#fff;font-size:12.5px;font-weight:600;line-height:1.3;padding:8px 16px;text-decoration:none;text-align:center}
 .last b{font-weight:800}
@@ -276,16 +304,22 @@ body{background:radial-gradient(900px 520px at 88% 0%,#E3EEFF 0%,rgba(227,238,25
 
 <!-- HERO -->
 <section class="wrap hero">
-  <p class="eyebrow">Для собственников стоматологий</p>
+  <div class="seg"><span class="on">Стоматология</span><a href="#cosmo">Косметология<i>скоро</i></a></div>
   <h1>Пациент получил план лечения и ушёл «подумать»? <em>Эти деньги возвращает куратор.</em></h1>
-  <p class="lead">Регламент куратора и схема дожима + 9 бонусов: готовая система, которая ведёт пациента от заявки до оплаченного плана. Внедрение за 1–2 недели вашей командой.</p>
+  <p class="lead">Регламент куратора + схема дожима + 9 бонусов: готовая система от заявки до оплаченного плана. Внедрение за 1–2 недели вашей командой.</p>
+  <button class="fan" type="button" data-g="s07" data-n="16" data-t="Куратор в стоматологии" aria-label="Листать страницы руководства куратора"><img src="img/covers/01.webp" alt="" width="340" height="481"><img src="img/covers/07.webp" alt="" width="340" height="481"><img src="img/covers/06.webp" alt="" width="340" height="481"><span class="fan-tag">19 файлов · 370+ страниц</span></button>
+  <div class="buyrow">
+    <a class="btn btn-main" href="https://t.me/smilesalesbot?start=landing" target="_blank" rel="noopener">Купить за 8 000 ₽</a>
+    <span class="pr"><s>24 000 ₽</s> · <span>окупается первым же оплаченным планом</span></span>
+  </div>
+  <ol class="how">
+    <li><b>1</b>Жмёте «Купить», открывается Telegram-бот</li>
+    <li><b>2</b>Переводите на карту Kaspi из России или Казахстана</li>
+    <li><b>3</b>Присылаете чек, доступ к папке приходит обычно за 15 минут</li>
+  </ol>
   <div class="author">
     <img src="img/author.webp" alt="Дмитрий Крюков" width="600" height="760">
     <div><b>Дмитрий Крюков, коммерческий директор</b><span>9+ лет в стоматологии · 70+ построенных КЦ · 60+ кресел в управлении</span></div>
-  </div>
-  <div class="buyrow">
-    <a class="btn btn-main" href="https://t.me/smilesalesbot?start=landing" target="_blank" rel="noopener">Получить за 8 000 ₽</a>
-    <span class="pr"><s>24 000 ₽</s> · <span>доступ в Telegram-боте</span></span>
   </div>
 </section>
 
@@ -364,7 +398,7 @@ body{background:radial-gradient(900px 520px at 88% 0%,#E3EEFF 0%,rgba(227,238,25
     <p class="eyebrow">И это не всё</p>
     <h2 class="h2">+ 9 бонусов в той же папке</h2>
     <div class="bsum"><span><b>19</b> файлов</span><span><b>370+</b> страниц</span><span><b>3</b> таблицы с автоподсчётом</span></div>
-    <div class="bgrid">
+    <div class="bgrid cut" id="bgrid">
       <button class="bn" type="button" data-list="img/pages/kc-01.webp,img/pages/kc-02.webp" data-t="Шпаргалка КЦ: квалификация лида"><span class="im"><img src="img/covers/kc.webp" alt="Шпаргалка КЦ: квалификация лида" width="340" height="240" loading="lazy"></span><span><span class="lbl"><em>Бонус 1</em><u>Новое</u></span><h3>Шпаргалка КЦ: квалификация лида</h3><p>КВАЛ или НЕКВАЛ по 4 условиям: менеджер не тратит время на пустые заявки.</p><small>2 стр.</small></span></button>
       <button class="bn" type="button" data-list="img/covers/cheat.webp" data-t="Шпаргалка менеджера"><span class="im"><img src="img/covers/cheat.webp" alt="Шпаргалка менеджера" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 2</em></span><h3>Шпаргалка менеджера на смену</h3><p>Вся схема и карта возражений на двух листах у монитора.</p><small>2 стр.</small></span></button>
       <button class="bn" type="button" data-g="s02" data-n="12" data-t="Работа с возражениями"><span class="im"><img src="img/covers/02.webp" alt="Работа с возражениями" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 3</em></span><h3>Работа с возражениями</h3><p>Скрытые возражения, перехват ушедшего пациента, разбор диалогов.</p><small>26 стр.</small></span></button>
@@ -375,7 +409,21 @@ body{background:radial-gradient(900px 520px at 88% 0%,#E3EEFF 0%,rgba(227,238,25
       <button class="bn" type="button" data-list="img/covers/03.webp" data-t="Майнд-карта схемы"><span class="im"><img src="img/covers/03.webp" alt="Майнд-карта схемы дожима" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 8</em></span><h3>Майнд-карта схемы</h3><p>Вся схема на одном листе A3: распечатать и повесить в КЦ.</p><small>PNG, A3</small></span></button>
       <button class="bn" type="button" data-list="img/covers/04.webp,img/covers/05.webp" data-t="ТЗ для маркетолога"><span class="im stack"><img src="img/covers/04.webp" alt="ТЗ: кейсы до и после" width="340" height="481" loading="lazy"></span><span><span class="lbl"><em>Бонус 9</em></span><h3>ТЗ: кейсы «до и после» и видео врачей</h3><p>Что снять маркетологу, чтобы пациент поверил до визита.</p><small>2 ТЗ</small></span></button>
     </div>
+    <button class="more" type="button" id="moreB">Показать все 9 бонусов</button>
     <p class="bfoot">+ инструкция «Как пользоваться папкой»: кому что читать и с чего начать. <a href="https://www.youtube.com/watch?v=euF8fXQFIlA" target="_blank" rel="noopener">Видео-обзор ›</a></p>
+  </div>
+</section>
+
+<!-- КОСМЕТОЛОГИЯ -->
+<section class="blk" id="cosmo">
+  <div class="wrap">
+    <div class="cosmo">
+      <p class="eyebrow">Скоро · для косметологии</p>
+      <h2 class="h2">Работаете в косметологии? Готовим такую же систему</h2>
+      <p>Регламент куратора, схема дожима и такие же рабочие документы, адаптированные под косметологию. Стоимость та же: <b>8 000 ₽</b>.</p>
+      <a class="btn btn-main" href="https://t.me/smilesalesbot?start=cosmo" target="_blank" rel="noopener">Записаться в лист ожидания</a>
+      <small>Пришлём в Telegram первым, когда папка будет готова.</small>
+    </div>
   </div>
 </section>
 
@@ -397,6 +445,7 @@ body{background:radial-gradient(900px 520px at 88% 0%,#E3EEFF 0%,rgba(227,238,25
       <details><summary>У нас нет куратора. Кого брать?</summary><p>В руководстве разобрано, где искать, как отсеять кандидатов кейс-тестом и как вырастить куратора из своих сотрудников. Плюс план первых 14 дней.</p></details>
       <details><summary>У нас небольшая клиника. Нужен ли куратор?</summary><p>Руководство помогает это решить по цифрам. Если отдельный куратор пока не нужен, схема описывает вариант, где пациента после консультации ведёт администратор.</p></details>
       <details><summary>Это готовые скрипты?</summary><p>Это порядок действий, нормы и скрипты живого разговора. Куратор понимает логику и не давит на пациента.</p></details>
+      <details><summary>А для косметологии есть?</summary><p>Готовим отдельную папку по той же системе, стоимость та же. Запишитесь в лист ожидания в блоке выше, и мы пришлём её первым.</p></details>
       <details><summary>Как получить папку?</summary><p>Нажмите «Купить»: откроется Telegram-бот с реквизитами. Оплатите в рублях или тенге, пришлите чек, и бот отправит ссылку на папку на Google Drive.</p></details>
     </div>
   </div>
@@ -414,6 +463,10 @@ body{background:radial-gradient(900px 520px at 88% 0%,#E3EEFF 0%,rgba(227,238,25
 
 <script>
 (function(){
+  /* все бонусы по кнопке */
+  var moreB=document.getElementById('moreB');
+  if(moreB)moreB.addEventListener('click',function(){document.getElementById('bgrid').classList.remove('cut');moreB.hidden=true});
+
   /* листалка страниц */
   var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbC=document.getElementById('lbC'),list=[],cur=0,title='';
   function show(){lbImg.src=list[cur];lbImg.alt=title+', страница '+(cur+1);lbC.textContent=title+' · '+(cur+1)+' / '+list.length}
