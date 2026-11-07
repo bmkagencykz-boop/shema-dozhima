@@ -233,6 +233,43 @@ button.doc:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(240,54,1
 .lb .ln{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 .lb .lc{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(26px + env(safe-area-inset-bottom,0px));color:#D7D1DA;font-size:13px;font-weight:600;text-align:center;white-space:nowrap}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* КОМУ ПОДОЙДЁТ */
+.fit{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:18px}
+@media (min-width:760px){.fit{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fit > div{border-radius:22px;padding:18px}
+.fit .yes{background:var(--lime-soft)}
+.fit .no{background:#fff;border:1px solid var(--line)}
+.fit h3{font-size:15px;font-weight:900;margin-bottom:10px}
+.fit ul{list-style:none;padding:0;display:grid;gap:9px}
+.fit li{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;font-size:14.5px;line-height:1.4}
+.fit li::before{content:"✓";width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:900;background:var(--lime);color:var(--ink)}
+.fit .no li{color:var(--ink-2)}
+.fit .no li::before{content:"✕";background:var(--pink-soft);color:var(--pink)}
+
+/* ВИДЕО-ОБЗОР */
+.video{position:relative;display:block;margin-top:18px;border-radius:24px;overflow:hidden;aspect-ratio:16/9;background:var(--ink);text-decoration:none;color:#fff;max-width:820px}
+.video img{display:block;width:100%;height:100%;object-fit:cover}
+.video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,20,26,0) 40%,rgba(23,20,26,.7))}
+.video .play{position:absolute;z-index:1;left:16px;bottom:16px;display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:15px}
+.video .play i{width:52px;height:52px;border-radius:50%;background:var(--pink);box-shadow:0 10px 26px rgba(240,54,106,.45);display:grid;place-items:center}
+.video .play i::before{content:"";margin-left:4px;border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* ОТЗЫВЫ: окошки листаются сами */
+.rvhead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.rvnote{margin-top:8px;font-size:13px;color:var(--mute)}
+.dots{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;padding-bottom:6px}
+.dots i{width:6px;height:6px;border-radius:99px;background:var(--line);transition:width .3s var(--ease),background .3s}
+.dots i.on{width:18px;background:var(--pink)}
+.rv{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;align-items:start;margin-top:16px;transition:height .45s var(--ease);max-width:760px}
+.rv::-webkit-scrollbar{display:none}
+.rc{scroll-snap-align:start;background:#fff;border-radius:22px;padding:18px;border:1px solid var(--line)}
+.rc p{font-size:14.5px;line-height:1.55;color:var(--ink-2)}
+.rc .who{margin-top:12px;font-size:13px;line-height:1.3}
+.rc .who b{display:block;font-weight:800;color:var(--ink)}
+.rc .who span{color:var(--mute);font-weight:600}
+
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -353,8 +390,29 @@ button.doc:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(240,54,1
   </div>
 </section>
 
-<!-- 4. КАК РАБОТАЕТ -->
+<!-- 3б. КОМУ ПОДОЙДЁТ -->
 <section class="blk cloud">
+  <div class="wrap">
+    <span class="eyebrow">Кому подойдёт</span>
+    <h2 class="h2">Папка для вас, <mark>если…</mark></h2>
+    <div class="fit">
+      <div class="yes"><h3>Подойдёт</h3><ul>
+        <li>Вы собственник или управляющий <span class="m-dent">стоматологии</span><span class="m-cosmo" hidden>косметологии</span></li>
+        <li>Заявки есть, но до оплаты доходят немногие</li>
+        <li><span class="m-dent">Пациенты</span><span class="m-cosmo" hidden>Клиенты</span> уходят «подумать» после консультации и пропадают</li>
+        <li>Хотите, чтобы отдел продаж работал по системе, а не держался на вас</li>
+      </ul></div>
+      <div class="no"><h3>Не подойдёт</h3><ul>
+        <li>Заявок почти нет: сначала нужен маркетинг</li>
+        <li>Ищете волшебную кнопку без внедрения</li>
+        <li>Не готовы менять работу администраторов и колл-центра</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. КАК РАБОТАЕТ -->
+<section class="blk">
   <div class="wrap">
     <span class="eyebrow">Как это работает</span>
     <h2 class="h2">Два документа закрывают <mark>весь путь</mark> <span class="m-dent">пациента</span><span class="m-cosmo" hidden>клиента</span></h2>
@@ -373,6 +431,18 @@ button.doc:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(240,54,1
   </div>
 </section>
 
+<!-- 4б. ВИДЕО-ОБЗОР -->
+<section class="blk cloud" id="video">
+  <div class="wrap">
+    <span class="eyebrow">Видео-обзор</span>
+    <h2 class="h2">Как устроена <mark>схема дожима</mark></h2>
+    <a class="video" id="videoCard" href="https://www.youtube.com/watch?v=euF8fXQFIlA" target="_blank" rel="noopener">
+      <img src="img/curator.webp" alt="Дмитрий Крюков с командой клиники" width="820" height="536" loading="lazy">
+      <span class="play"><i></i>Смотреть обзор</span>
+    </a>
+  </div>
+</section>
+
 <!-- 5. АВТОР -->
 <section class="blk">
   <div class="wrap author">
@@ -388,6 +458,29 @@ button.doc:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(240,54,1
         <div><b>60<em>+</em></b><span>кресел в управлении</span></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- 5б. ОТЗЫВЫ -->
+<section class="blk cloud" id="reviews">
+  <div class="wrap">
+    <div class="rvhead">
+      <div><span class="eyebrow">Отзывы</span><h2 class="h2">Клиники о работе <mark>с Дмитрием</mark></h2></div>
+      <span class="dots" id="dots"></span>
+    </div>
+    <p class="rvnote">Собственники и руководители клиник об аудите отдела продаж и внедрении системы.</p>
+    <div class="rv" id="rv">
+          <div class="rc"><p>Мы взяли полный аудит отдела продаж у Smile Sales Agency в лице Дмитрия Крюкова. Хотелось бы отметить профессиональное отношение к делу. С первых дней начали проверку по всем направлениям: заявки, работа колл-центра, администраторов, в целом прошлись по пути пациента. На начальных этапах была собрана вся нужная информация для оценки и дальнейшего внедрения эффективных инструментов. Разобрали CRM-систему, настроили и отрегулировали воронку, добавили шаблоны кейсов, видео-визитки врачей. Нашим сотрудникам проводилось обучение с выдачей учебного материала по модулям. Улучшили схему дожима первичных пациентов с помощью углублённого выявления потребностей. Чётко расписали схему действий координатора лечения, отработки возражений. В целом хотелось бы отметить положительное влияние данного аудита. С нами всегда были на связи, давали обратную связь.</p><p class="who"><b>Dr. Rau Dental Clinic</b><span>стоматология · Павлодар</span></p></div>
+          <div class="rc"><p>Если честно, шла на аудит с мыслью «ну что он мне нового скажет, я 18 лет в стоматологии». Дмитрий за три дня прослушал звонки, посидел на ресепшене физически и показал мне, что мои администраторы ничего не делают! Построили КЦ с нуля, ввели контроль, через месяц конверсия из звонка в запись выросла с 21 до 53%.</p><p class="who"><b>Айгерим Нурланова</b><span>собственник · Алматы</span></p></div>
+          <div class="rc"><p>Аудит был жёсткий. Дима не церемонится, прямо сказал, что у нас кураторы не продают лечение, а «озвучивают прайс и ждут». Было неприятно, но по делу. Самое ценное не отчёт, а то, что он разобрал с каждым куратором конкретные его разговоры. Не абстрактно. Спасибо!</p><p class="who"><b>Бауржан Серикович</b><span>главврач · Астана</span></p></div>
+          <div class="rc"><p>Не буду лукавить, не всё из рекомендаций мы внедрили, часть оказалась не под нашу модель. Но то, что внедрили, работает. Особенно система разбора звонков раз в неделю. Дмитрий честный, лишнего не обещает, цифрами не разбрасывается. Для рынка, где все обещают «х3 за месяц», это редкость.</p><p class="who"><b>Олег</b><span>собственник · Екатеринбург</span></p></div>
+          <div class="rc"><p>У нас две клиники, и мы думали, что проблема в рекламе, мало заявок. Дмитрий посмотрел CRM и сказал, что дело не в рекламе. Сейчас внедрили систему касаний, план на июль уже перевыполнили. Спасибо вам!</p><p class="who"><b>Динара</b><span>управляющая · Шымкент</span></p></div>
+          <div class="rc"><p>Главное, что понравилось: Дмитрий в стоматологии разбирается, не надо объяснять, что такое комплексный план и почему пациент на импланты думает полгода. Говорит на нашем языке. Отчёт получили на 40 с чем-то страниц, но там не вода, а конкретные вещи: кто, что, когда, сколько стоит исправить. Благодарю за работу.</p><p class="who"><b>Александр Кац</b><span>собственник · Караганда</span></p></div>
+          <div class="rc"><p>Делали аудит дистанционно, были сомнения, что из этого выйдет. Вышло нормально: записи звонков, доступ в CRM, два созвона с командой, и Дмитрий нашёл то, что мы 3 года не замечали. Можно без подробностей? Дмитрий, спасибо!</p><p class="who"><b>Марина Владимировна</b><span>главврач и совладелец</span></p></div>
+          <div class="rc"><p>Поначалу коллектив воспринял аудит в штыки, думали, пришли увольнять. Дмитрий это снял за первый день, объяснил, что он смотрит процессы, а не людей. В итоге никого не уволили, а два администратора сами попросили обучение. Через полтора месяца средний чек первичного пациента вырос примерно на 28%.</p><p class="who"><b>Мадина Ержанова</b><span>директор · Актобе</span></p></div>
+          <div class="rc"><p>Клиника молодая, всё строили на ощущениях. Дмитрий поставил структуру: воронка, точки контроля, кто за что отвечает. Теперь я хотя бы понимаю, куда уходят деньги и где теряем пациентов. Для региональной клиники это было очень нужно, спасибо.</p><p class="who"><b>Алишер, Dentalux</b><span>собственник · Туркестан</span></p></div>
+          <div class="rc"><p>Самое полезное: Дима дал готовые инструменты: чек-лист для администратора, таблицу контроля кураторов, скрипт на возврат пациентов. Можно было брать и внедрять на следующий день. Так и сделали. Хотели бы поработать на полном сопровождении, но мест нет)</p><p class="who"><b>Анна Кравцова</b><span>управляющая</span></p></div>
+        </div>
   </div>
 </section>
 
@@ -448,6 +541,37 @@ button.doc:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(240,54,1
   var start=/cosmo/.test(location.hash+location.search)?'cosmo':null;
   if(!start){try{start=localStorage.getItem('ssa-mode')}catch(e){}}
   setMode(start==='cosmo'?'cosmo':'dent');
+
+
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* видео: на сайте играет прямо на странице, в превью открывается YouTube */
+  var vc=document.getElementById('videoCard');
+  if(vc&&document.documentElement.dataset.embed==='1'){
+    vc.addEventListener('click',function(e){
+      e.preventDefault();
+      vc.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/euF8fXQFIlA?autoplay=1&rel=0" title="Видео-обзор" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+    },{once:true});
+  }
+
+  /* отзывы: окошки листаются сами по кругу (длинный отзыв висит дольше), пауза при касании */
+  var rv=document.getElementById('rv'),cards=rv.children,dots=document.getElementById('dots'),cur=0,hold=0;
+  function fit(){rv.style.height=cards[cur].offsetHeight+'px'}
+  function mark(){[].forEach.call(dots.children,function(d,k){d.classList.toggle('on',k===cur)});fit()}
+  if(cards.length>1){
+    for(var i=0;i<cards.length;i++)dots.appendChild(document.createElement('i'));
+    var st;rv.addEventListener('scroll',function(){clearTimeout(st);st=setTimeout(function(){var k=Math.round(rv.scrollLeft/(cards[0].offsetWidth+12));if(k!==cur){cur=k;mark()}},80)},{passive:true});
+    ['pointerdown','touchstart','mouseenter'].forEach(function(ev){rv.addEventListener(ev,function(){hold=Date.now()},{passive:true})});
+    window.addEventListener('resize',fit);window.addEventListener('load',fit);
+    function next(){
+      setTimeout(function(){
+        if(Date.now()-hold>8000&&!document.hidden){cur=(cur+1)%cards.length;rv.scrollTo({left:cards[cur].offsetLeft-rv.offsetLeft,behavior:'smooth'});mark()}
+        next();
+      },Math.min(25000,3000+cards[cur].textContent.length*30));
+    }
+    if(!reduce)next();
+    mark();
+  }
 
   /* листалка страниц */
   function pad(n){return (n<10?'0':'')+n}
